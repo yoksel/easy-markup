@@ -1,4 +1,4 @@
-body {
+BODY {
     margin: 0;
     padding: 0;
     background-color: $background-color;
@@ -6,7 +6,7 @@ body {
     color: $text-color;
 }
 
-a {
+A {
     color: $brand-color;
     text-decoration: none;
 
@@ -20,27 +20,63 @@ a {
     }
 }
 
-figure {
+H1, H2, H3, H4 {
+    margin: .5em 0;
+}
+
+H1 {
+    font-size: 3.2rem;
+}
+
+H2 {
+    font-size: 2.5rem;
+}
+
+H3 {
+    font-size: 2rem;
+}
+
+H4 {
+    font-size: 1.5rem;
+}
+
+FIGURE {
     margin: 0;
 }
 
-li {
+LI {
     margin-bottom: .5rem;
 }
 
-pre,
-code {
+DT {
+    font-weight: bold;
+}
+
+LI > DL > DT {
+    font-size: 1.1em;
+}
+
+DD > DL {
+    margin-top: .5rem ;
+}
+
+DD:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+PRE,
+CODE {
     border: 1px solid #DDD;
     border-radius: 3px;
     background-color: #EEE;
     font-size: 15px;
 }
 
-code {
+CODE {
     padding: 1px 5px;
 }
 
-pre {
+PRE {
     padding: 8px 12px;
     overflow-x: auto;
 
@@ -50,4 +86,22 @@ pre {
         padding-left: 0;
     }
 }
+
+/* Counters */
+
+OL {
+    counter-reset: list-counter;
+    list-style: none;
+}
+
+OL > LI {
+    counter-increment: list-counter;
+}
+    OL > LI > H3:before {
+        content: counter(list-counter) '. ';
+        /*display: block;*/
+        /*position: absolute;*/
+    }
+
+
 
