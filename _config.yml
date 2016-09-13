@@ -9,7 +9,7 @@
 title: Простые правила разметки
 description: > # this means to ignore newlines until "baseurl:"
   Простые правила разметки HTML-документов, рекомендации по выбору HTML-элементов, примеры кода
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: '/easy-markup' # the subpath of your site, e.g. /blog
 
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: yoksel

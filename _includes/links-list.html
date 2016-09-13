@@ -1,5 +1,5 @@
 <ul class="{{ include.parent }}__list">{% for link in include.list %}
     <li class="{{ include.parent }}__item {% if link.url == page.url %} {{ include.parent }}__item--current {% endif %}">
-    <a {% if link.url != page.url %} href="{{ link.url }}" {% endif %}>{{ link.name }}</a>
+    <a {% if link.url != page.url %} href="{{ link.url | prepend: site.baseurl }}" {% endif %}>{{ link.name }}</a>
     </li>{% endfor %}
 </ul>
