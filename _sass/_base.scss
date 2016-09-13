@@ -21,7 +21,7 @@ A {
     }
 }
 
-H1, H2, H3, H4 {
+H1, H2, H3, H4, H5 {
     margin: .5em 0;
 }
 
@@ -42,6 +42,9 @@ H1 {
 H2 {
     font-size: 2.5rem;
 }
+    .post__title {
+        margin-top: 0;
+    }
 
 H3 {
     font-size: 2rem;
@@ -49,6 +52,10 @@ H3 {
 
 H4 {
     font-size: 1.5rem;
+}
+
+H5 {
+    font-size: 1.25rem;
 }
 
 FIGURE {
@@ -114,5 +121,9 @@ OL > LI {
         /*position: absolute;*/
     }
 
+.page-nav__list {
+    font-size: .9em;
+    list-style-type: decimal;
+}
 
 

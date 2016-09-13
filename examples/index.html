@@ -2,6 +2,24 @@
 layout: page
 title: Примеры кода
 permalink: /examples/
+
+links:
+ - name: 'Простой список'
+   url: '#simple-list'
+ - name: 'Картинка пользователя (юзерпик)'
+   url: '#userpic'
+ - name: 'Галерея'
+   url: '#gallery'
+ - name: 'Навигация'
+   url: '#nav'
+ - name: 'Виджет в боковой колонке'
+   url: '#widget'
+ - name: 'Блок новостей'
+   url: '#news'
+ - name: 'Статья или пост в блоге (простой вариант)'
+   url: '#simple-article'
+ - name: 'Статья или пост в блоге (сложный вариант)'
+   url: '#article'
 ---
 
 <div class="intro">
@@ -10,7 +28,7 @@ permalink: /examples/
 
 <ol>
   <li>
-    <h3>Простой список</h3>
+    <h3 id="simple-list">Простой список</h3>
 
 {% highlight html %}
 <ul class="list">
@@ -22,7 +40,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Картинка пользователя (юзерпик)</h3>
+    <h3 id="userpic">Картинка пользователя (юзерпик)</h3>
 
 {% highlight html %}
 <div class="user">
@@ -33,7 +51,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Галерея</h3>
+    <h3 id="gallery">Галерея</h3>
 
 {% highlight html %}
 <div class="gallery gallery--slider">
@@ -50,7 +68,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Навигация</h3>
+    <h3 id="nav">Навигация</h3>
 
 {% highlight html %}
 <nav class="nav">
@@ -83,7 +101,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Виджет в боковой колонке</h3>
+    <h3 id="widget">Виджет в боковой колонке</h3>
 
 {% highlight html %}
 <div class="widget">
@@ -101,7 +119,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Блок новостей</h3>
+    <h3 id="news">Блок новостей</h3>
 
 {% highlight html %}
 <div class="news">
@@ -138,7 +156,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Статья или пост в блоге (простой вариант)</h3>
+    <h3 id="simple-article">Статья или пост в блоге (простой вариант)</h3>
 
 {% highlight html %}
 <article class="article">
@@ -169,7 +187,7 @@ permalink: /examples/
   </li>
 
   <li>
-    <h3>Статья или пост в блоге (сложный вариант)</h3>
+    <h3 id="article">Статья или пост в блоге (сложный вариант)</h3>
 
 {% highlight html %}
 <article class="entry">

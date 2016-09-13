@@ -20,6 +20,16 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+@mixin clear {
+    clear: both;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        width: 100%;
+    }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

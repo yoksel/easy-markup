@@ -1,21 +1,42 @@
 .wrapper {
   min-width: 300px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem 3rem;
   box-sizing: border-box;
+}
+
+.container {
+  @include clear;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding-right: 320px;
+  box-sizing: border-box;
+}
+
+.aside {
+  float: right;
+  margin-left: -300px;
+  width: 300px;
 }
 
 .site-header {
   margin-bottom: 2em;
   padding-bottom: 1.5rem;
   border-bottom: 3px solid #EEE;
+
+  @include clear;
 }
 
 .site-footer {
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 3px solid #EEE;
+
+  @include clear;
 }
 
 .site-nav {

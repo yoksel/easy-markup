@@ -8,11 +8,18 @@
     <div class="wrapper">
       {% include header.html %}
 
-      <main class="main">
-        <div class="page-content">
-          {{ content }}
-        </div>
-      </main>
+      <div class="container">
+        <main class="main">
+          <div class="page-content">
+            {{ content }}
+          </div>
+        </main>
+
+        <aside class="aside">
+          <h5>Содержание:</h5>
+          {% include page-nav.html list=page.links parent='page-nav' type='ol' %}
+        </aside>
+      </div>
 
       {% include footer.html %}
 
