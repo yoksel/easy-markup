@@ -9,6 +9,7 @@ BODY {
 A {
     color: $brand-color;
     text-decoration: underline;
+    transition: all .25s;
 
     &:visited {
         color: darken($brand-color, 15%);

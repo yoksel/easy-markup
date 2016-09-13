@@ -1,28 +1,84 @@
 .wrapper {
-    min-width: 300px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem 2rem;
-    box-sizing: border-box;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  box-sizing: border-box;
 }
 
 .site-header {
-    margin-bottom: 3rem;
+  margin-bottom: 2em;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #EEE;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid #EEE;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav__list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-    .site-nav__item {
-        margin: 0 2rem 0 0 ;
-        padding: 0;
-    }
+  .site-nav__item {
+    margin: 0 2rem 0 0 ;
+    padding: 0;
+  }
 
-    .site-nav__item--current A {
-        text-decoration: none;
-        font-weight: bold;
-        color: inherit;
+  .site-nav__item--current A {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+  }
+
+/* Socials */
+
+.socials {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  .socials__item {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+    .socials__icon {
+      transition: all .25s;
+    }
+      .socials__icon--github {
+        color: #000;
+
+        &:hover {
+          color: lighten( #000, 50%);
+        }
+      }
+
+      .socials__icon--twitter {
+        color: #1da1f2;
+
+        &:hover {
+          color: lighten( #1da1f2, 20%);
+        }
+      }
+      .socials__icon svg {
+        display: block;
+        width: 1.2em;
+        height: 1.2em;
+      }
+        .socials__icon path {
+          fill: currentColor;
+      }
+    .socials__username {
+      display: none;
     }

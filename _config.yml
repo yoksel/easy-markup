@@ -29,3 +29,9 @@ menu:
    url: '/bem-rules/'
  - name: 'Примеры кода'
    url: '/examples/'
+
+socials:
+ - name: '@yoksel'
+   url: 'https://twitter.com/yoksel'
+ - name: 'Проект на GitHub'
+   url: 'https://github.com/yoksel/easy-markup/'
