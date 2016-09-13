@@ -1,7 +1,7 @@
 <header class="site-header">
   <h1 class="site-header__title">
     {% if page.permalink %}
-        <a href="/">{{ site.title }}</a>
+        <a href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
     {% else %}
         {{ site.title }}
     {% endif%}
