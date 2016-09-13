@@ -8,7 +8,7 @@
 # Site settings
 title: Простые правила разметки
 description: > # this means to ignore newlines until "baseurl:"
-  текст текст текст
+  Простые правила разметки HTML-документов, рекомендации по выбору HTML-элементов, примеры кода
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
@@ -18,4 +18,14 @@ github_username:  yoksel
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: /title/
+
+menu:
+ - name: 'Введение'
+   url: '/'
+ - name: 'Первые шаги'
+   url: '/first-steps/'
+ - name: 'Как писать классы по БЭМ?'
+   url: '/bem-rules/'
+ - name: 'Примеры кода'
+   url: '/examples/'

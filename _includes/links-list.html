@@ -1,0 +1,5 @@
+<ul class="site-nav__list">{% for link in include.list %}
+    <li class="site-nav__item {% if link.url == page.url %} site-nav__item--current {% endif %}">
+    <a {% if link.url != page.url %} href="{{ link.url }}" {% endif %}>{{ link.name }}</a>
+    </li>{% endfor %}
+</ul>

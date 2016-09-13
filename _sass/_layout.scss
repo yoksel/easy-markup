@@ -2,6 +2,27 @@
     min-width: 300px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     box-sizing: border-box;
 }
+
+.site-header {
+    margin-bottom: 3rem;
+}
+
+.site-nav__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    .site-nav__item {
+        margin: 0 2rem 0 0 ;
+        padding: 0;
+    }
+
+    .site-nav__item--current A {
+        text-decoration: none;
+        font-weight: bold;
+        color: inherit;
+    }

@@ -25,7 +25,17 @@ H1, H2, H3, H4 {
 }
 
 H1 {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
+
+    A,
+    A:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    A:hover {
+        text-decoration: underline;
+    }
 }
 
 H2 {

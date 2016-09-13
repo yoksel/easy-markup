@@ -1,6 +1,14 @@
 <header class="site-header">
   <h1 class="site-header__title">
-    {{ site.title }}
+    {% if page.permalink %}
+        <a href="/">{{ site.title }}</a>
+    {% else %}
+        {{ site.title }}
+    {% endif%}
   </h1>
+
+  <nav class="site-nav">
+    {% include links-list.html list=site.menu %}
+  </nav>
 
 </header>
