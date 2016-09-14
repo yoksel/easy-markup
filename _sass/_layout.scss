@@ -10,17 +10,33 @@
   @include clear;
 }
 
-.main {
-  float: left;
-  width: 100%;
-  padding-right: 320px;
-  box-sizing: border-box;
-}
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.aside {
-  float: right;
-  margin-left: -300px;
-  width: 300px;
+  .main {
+    order: 1;
+  }
+
+  .aside {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .main {
+    float: left;
+    width: 100%;
+    padding-right: 320px;
+    box-sizing: border-box;
+  }
+
+  .aside {
+    float: right;
+    margin-left: -300px;
+    width: 300px;
+  }
 }
 
 .site-header {
@@ -47,9 +63,15 @@
 
 .site-nav__list {
   display: flex;
-  list-style-type: none;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
+  list-style-type: none;
+
+  @media (max-width: 750px) {
+    line-height: 2;
+  }
 }
   .site-nav__item {
     margin: 0 2rem 0 0 ;
@@ -94,8 +116,14 @@
       }
       .socials__icon svg {
         display: block;
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.4em;
+        height: 1.4em;
+
+        @media (min-width: 800px) {
+          width: 1.2em;
+          height: 1.2em;
+        }
+
       }
         .socials__icon path {
           fill: currentColor;

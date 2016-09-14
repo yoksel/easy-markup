@@ -26,7 +26,11 @@ H1, H2, H3, H4, H5 {
 }
 
 H1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+
+    @media (min-width: 800px) {
+        font-size: 3.5rem;
+    }
 
     A,
     A:visited {
@@ -40,18 +44,30 @@ H1 {
 }
 
 H2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+
+    @media (min-width: 800px) {
+        font-size: 2.5rem;
+    }
 }
     .post__title {
         margin-top: 0;
     }
 
 H3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @media (min-width: 800px) {
+        font-size: 2rem;
+    }
 }
 
 H4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    @media (min-width: 800px) {
+        font-size: 1.5rem;
+    }
 }
 
 H5 {
