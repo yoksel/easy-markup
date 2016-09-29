@@ -10,8 +10,10 @@ links:
    url: '#userpic'
  - name: 'Галерея'
    url: '#gallery'
- - name: 'Навигация'
-   url: '#nav'
+ - name: 'Навигация (простой вариант)'
+   url: '#nav-1'
+ - name: 'Навигация (сложный вариант)'
+   url: '#nav-2'
  - name: 'Виджет в боковой колонке'
    url: '#widget'
  - name: 'Блок новостей'
@@ -20,6 +22,8 @@ links:
    url: '#simple-article'
  - name: 'Статья или пост в блоге (сложный вариант)'
    url: '#article'
+ - name: 'Разметка страницы'
+   url: '#page-markup'
 ---
 
 <div class="intro">
@@ -68,7 +72,7 @@ links:
   </li>
 
   <li>
-    <h3 id="nav">Навигация</h3>
+    <h3 id="nav-1">Навигация (простой вариант)</h3>
 
 {% highlight html %}
 <nav class="nav">
@@ -79,6 +83,10 @@ links:
   <a class="nav__link" href="#">Совсем конец</a>
 </nav>
 {% endhighlight %}
+  </li>
+
+  <li>
+    <h3 id="nav-2">Навигация (сложный вариант)</h3>
 
 {% highlight html %}
 <nav class="nav">
@@ -245,6 +253,68 @@ links:
     </ul>
   </menu>
 </article>
+{% endhighlight %}
+  </li>
+
+  <li>
+    <h3 id="page-markup">Разметка страницы</h3>
+
+{% highlight html %}
+<!-- Шапка сайта -->
+<header class="site-header">
+  <h1 class="site-header__title">Название сайта</h1>
+
+  <nav class="site-header__nav site-nav">
+    <a href="#" class="site-nav__link">О продукте</a>
+    <a href="#" class="site-nav__link">О погоде</a>
+    <a href="#" class="site-nav__link">О чём шумит камыш</a>
+  </nav>
+</header>
+
+<!-- Главное содержимое страницы -->
+<main class="site-main">
+  <!-- Разделы главного содержимого -->
+  <section class="features">
+    <h2 class="features__title">Преимущества</h2>
+
+    <ul class="features__list">
+      <li class="features__item">Высокие потолки</li>
+      [...]
+    </ul>
+  </section>
+
+  <section class="prices">
+    <h2 class="prices__title">Тарифы</h2>
+
+    <ul class="prices__list">
+      <li class="prices__item">30 зонтиков в минуту</li>
+      [...]
+    </ul>
+  </section>
+</main>
+
+<!-- Боковая колонка -->
+<aside class="site-aside">
+  <div class="widget">
+    <h3 class="widget__title">Как мы отдыхаем?</h3>
+    <div class="widget__text">Читайте в нашей новой книге «Никак»</div>
+  </div>
+</aside>
+
+<!-- Подвал сайта -->
+<footer class="site-footer">
+  <ul class="site-footer__socials socials">
+    <li class="socials__item">
+      <a href="#" class="socials__link">Twitter</a>
+      <a href="#" class="socials__link">Facebook</a>
+      <a href="#" class="socials__link">Одноклассники</a>
+    </li>
+  </ul>
+
+  <div class="site-footer__copyright copyright ">
+    Сделано <a href="#" class="copyright__link">левой пяткой</a>
+  </div>
+</footer>
 {% endhighlight %}
   </li>
 </ol>
