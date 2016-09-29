@@ -29,6 +29,8 @@ menu:
    url: '/bem-rules/'
  - name: 'Примеры кода'
    url: '/examples/'
+ - name: 'Капля магии'
+   url: '/drop-of-magic/'
 
 socials:
  - name: '@yoksel'

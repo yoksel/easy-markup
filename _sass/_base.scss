@@ -60,6 +60,15 @@ H3 {
     @media (min-width: 800px) {
         font-size: 2rem;
     }
+
+    SUP {
+        font-size: .7rem;
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 H4 {
@@ -138,8 +147,24 @@ OL > LI {
     }
 
 .page-nav__list {
-    font-size: .9em;
     list-style-type: decimal;
+    font-size: .9em;
 }
 
+.footnotes {
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid #DDD;
+    list-style-type: decimal;
+    font-size: .9em;
+    color: #777;
+}
 
+.footnotes__item {
+    float: left;
+    clear: both;
+    padding: .3rem .5rem;
+}
+.footnotes__item:target {
+    background: lemonchiffon;
+}

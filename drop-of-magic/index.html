@@ -1,0 +1,94 @@
+---
+layout: page
+title: Капля магии
+type: page
+permalink: /drop-of-magic/
+
+links:
+ - name: '«Цель вижу, в себя верю!»'
+   url: '#target'
+ - name: '«Всем выйти из сумрака!»'
+   url: '#dusk'
+---
+
+<div class="intro">
+    <p>Когда разметка будет готова, к ней потребуется оформление. Если добавить в ваши коды немного вспомогательных стилей, это поможет вам писать CSS проще и быстрее</p>
+</div>
+
+<ol>
+    <li>
+        <h3 id="target" title="Цитата из к/ф «Чародеи»">«Цель вижу, в себя верю!»</h3>
+
+        <p>Чтобы аккуратно сверстать макет, ничего не потеряв по дороге, нужно или обладать хорошей зрительной памятью, или постоянно сверяться с макетом. Второе отнимает массу времени, и всё равно можно что-то упустить. Для решения проблемы можно просто подложить макет под страницу:</p>
+
+{% highlight html %}
+<style>
+  BODY {
+    background: url( 'img/page.jpg' ) 50% 0 no-repeat;
+  }
+</style>
+{% endhighlight %}
+
+        <p>Код вставляется в элемент <code>head</code>.</p>
+
+        <p>Если у вас есть макеты для разных разрешений экрана, их можно менять с помощью медиавыражений:</p>
+
+{% highlight html %}
+<style>
+  BODY {
+    background: url( 'img/page-mobile.jpg' ) 50% 0 no-repeat;
+  }
+
+  @media (min-width: 800px) {
+    BODY {
+      background-image: url( 'img/page-tablet.jpg' );
+    }
+  }
+
+  @media (min-width: 1200px) {
+    BODY {
+      background-image: url( 'img/page-desktop.jpg' );
+    }
+  }
+</style>
+{% endhighlight %}
+
+        <p>Таким образом макеты будут всё время перед глазами и вам не придётся тратить время на переключение в графический редактор и обратно. Особенно это удобно при работе на маленьком экране, когда не получается разместить рядом фотошоп и браузер.</p>
+    </li>
+    <li>
+        <h3 id="dusk" title="Цитата из к/ф «Ночной дозор»">«Всем выйти из сумрака!»</h3>
+
+        <p>Раскладывая элементы по странице, очень удобно видеть где они начинаются и где заканчиваются. Самый простой способ добавить границы выглядит так: </p>
+
+{% highlight css %}
+.yourclass {
+    outline: 2px solid hotpink;
+}
+{% endhighlight %}
+
+        <p>Почему <code>outline</code>, а не <code>border</code>? <code>outline</code> не влияет на блочную модель элемента и не меняет его размеры, как это делает <code>border</code>.</p>
+
+        <p>Чтобы добавить обводки сразу нескольким крупным блокам, можно использовать такой код:</p>
+
+{% highlight css %}
+BODY > * {
+    outline: 2px solid hotpink;
+}
+BODY > * > * {
+    outline: 2px dashed yellowgreen;
+    outline-offset: -2px;
+}
+BODY > * > * > * {
+    outline: 2px dotted steelblue;
+    outline-offset: -4px;
+}
+{% endhighlight %}
+
+        <p>В действии это выглядит примерно так:</p>
+
+        <p data-height="630" data-theme-id="4974" data-slug-hash="yaXGpa" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yaXGpa/">yaXGpa</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p>Этот код тоже можно вставить в <code>head</code>, но лучше положить его в файл с вашими стилями. Вы можете добавить ещё больше обводок или задать свои цвета (цвета удобно задавать <a href="http://css.yoksel.ru/pages/tablitsa-imenovanny-h-tsvetov/">названиями</a>).</p>
+    </li>
+</ol>
