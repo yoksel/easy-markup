@@ -55,9 +55,11 @@ links:
 
         <p>Таким образом макеты будут всё время перед глазами и вам не придётся тратить время на переключение в графический редактор и обратно. Особенно это удобно при работе на маленьком экране, когда не получается разместить рядом фотошоп и браузер.</p>
 
-        <p>При использовании этого способа в какой-то момент текст страницы наложится на текст макета, и получится нечитаемая каша. Чтобы отличить их друг от друга, можно CSS-ом раскрасить текст в яркие цвета (например, <code>color: crimson</code>):</p>
+        <p>При использовании этого способа в какой-то момент текст страницы наложится на текст макета, и получится нечитаемая каша. Чтобы отличить их друг от друга, можно CSS-ом раскрасить текст в яркие цвета (например, <code>color: crimson</code>). Получится примерно вот такое:</p>
 
         <img src="../assets/img/colored-text.png">
+
+        <p>Сразу видно где страница не совпадает с макетом и что нужно подправить.</p>
     </li>
     <li>
         <h3 id="dusk" title="Цитата из к/ф «Ночной дозор»">Всем выйти из сумрака!</h3>
@@ -66,7 +68,7 @@ links:
 
 {% highlight css %}
 .yourclass {
-    outline: 2px solid hotpink;
+    outline: 2px solid deeppink;
 }
 {% endhighlight %}
 
@@ -76,14 +78,14 @@ links:
 
 {% highlight css %}
 BODY > * {
-    outline: 2px solid hotpink;
+    outline: 2px solid deeppink;
 }
 BODY > * > * {
-    outline: 2px dashed yellowgreen;
+    outline: 2px dashed lime;
     outline-offset: -2px;
 }
 BODY > * > * > * {
-    outline: 2px dotted steelblue;
+    outline: 2px dotted dodgerblue;
     outline-offset: -4px;
 }
 {% endhighlight %}
@@ -93,6 +95,6 @@ BODY > * > * > * {
         <p data-height="630" data-theme-id="4974" data-slug-hash="yaXGpa" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yaXGpa/">yaXGpa</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-        <p>Этот код тоже можно вставить в <code>head</code>, но лучше положить его в файл с вашими стилями. Можно добавить ещё больше обводок или задать свои цвета (цвета удобно задавать <a href="http://css.yoksel.ru/pages/tablitsa-imenovanny-h-tsvetov/">названиями</a>).</p>
+        <p>Этот код тоже можно вставить в <code>head</code>, но лучше положить его в файл с вашими стилями. Можно добавить ещё больше обводок или задать свои цвета (цвета удобно задавать <a href="https://yoksel.github.io/handy-colors/">названиями</a>).</p>
     </li>
 </ol>
