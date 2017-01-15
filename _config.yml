@@ -31,6 +31,8 @@ menu:
    url: '/examples/'
  - name: 'Капля магии'
    url: '/drop-of-magic/'
+ - name: 'Тестируем всё'
+   url: '/check-code/'
 
 socials:
  - name: '@yoksel'
