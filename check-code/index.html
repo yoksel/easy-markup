@@ -9,6 +9,8 @@ links:
   url: '#check-html'
 - name: 'Проверить БЭМ-разметку'
   url: '#check-bem'
+- name: 'Проверить CSS'
+  url: '#check-css'
 - name: 'Проверить страницу на разных размерах экрана'
   url: '#devices'
 - name: 'Проверить страницу на соответствие макету'
@@ -40,6 +42,27 @@ links:
       <p>Используйте <a href="http://yoksel.github.io/html-tree/">Html tree</a>.</p>
 
       <p> Инструмент построит структуру страницы, проверит БЭМ-разметку на самые простые ошибки и покажет иерархию заголовков.</p>
+    </li>
+
+    <li>
+      <h3 id="check-css">Проверить CSS</h3>
+
+      <p>Используйте <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">The stylelint CLI</a>.</p>
+
+      <p>Установка:</p>
+
+{% highlight js %}
+npm install -g stylelint
+{% endhighlight %}
+
+      <p>Использование:</p>
+
+{% highlight js %}
+stylelint "sass/**/*.scss"
+{% endhighlight %}
+
+      <p>Команда запускается в папке проекта.</p>
+
     </li>
 
     <li>
