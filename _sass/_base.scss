@@ -140,14 +140,16 @@ OL {
     counter-reset: list-counter;
     list-style: none;
 }
+OL OL {
+    list-style-type: decimal;
+    padding-left: 1.2em;
+}
 
 OL > LI {
     counter-increment: list-counter;
 }
     OL > LI > H3:before {
         content: counter(list-counter) '. ';
-        /*display: block;*/
-        /*position: absolute;*/
     }
 
 .page-nav__list {
