@@ -47,6 +47,12 @@ links:
     <li>
       <h3 id="check-css">Проверить CSS</h3>
 
+      <h4>Валидация</h4>
+
+      <p>Используйте <a href="https://csstree.github.io/docs/validator.html">CSS syntax validator</a>.</p>
+
+      <h4>Форматирование</h4>
+
       <p>Используйте <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">The stylelint CLI</a>.</p>
 
       <p>Установка:</p>
@@ -55,10 +61,20 @@ links:
 npm install -g stylelint
 {% endhighlight %}
 
+      <p>Также нужен файл с правилами проверки стилей. Можно взять <a href="https://raw.githubusercontent.com/yoksel/easy-markup/gh-pages/.stylelintrc">мой набор правил</a>, сохраните его в корне проекта в файл с названием <code>.stylelintrc</code> (расширение не нужно).</p>
+
+      <p>Файл с правилами можно редактировать под ваши нужды, узнать больше о правилах <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md">можно здесь</a>.</p>
+
       <p>Использование:</p>
 
+        <b>SASS:</b>
 {% highlight js %}
 stylelint "sass/**/*.scss"
+{% endhighlight %}
+
+        <b>LESS:</b>
+{% highlight js %}
+stylelint "less/**/*.less"
 {% endhighlight %}
 
       <p>Команда запускается в папке проекта.</p>
