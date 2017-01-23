@@ -146,7 +146,12 @@
         message: "Ожидается пустая строка перед правилом"
       }
     ],
-    "selector-pseudo-element-colon-notation": "single",
+    "selector-pseudo-element-colon-notation": [
+      "double",
+      {
+        message: "Для псевдоэлементов следует использовать двойное двоеточие"
+      }
+    ],
     "selector-no-id": [
       true,
       {
@@ -182,6 +187,6 @@
       {
         "message": "Некорректные единицы измерения"
       }
-    ]
+    ],
   }
 }
