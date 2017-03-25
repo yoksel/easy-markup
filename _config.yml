@@ -33,6 +33,8 @@ menu:
    url: '/drop-of-magic/'
  - name: 'Тестируем всё'
    url: '/check-code/'
+ - name: 'Доступность'
+   url: '/accessibility/'
 
 socials:
  - name: '@yoksel'

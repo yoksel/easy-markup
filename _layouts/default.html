@@ -16,8 +16,10 @@
         </main>
 
         <aside class="aside">
-          <h5>На этой странице:</h5>
-          {% include page-nav.html list=page.links parent='page-nav' type='ol' %}
+          <nav class="page-nav">
+            <div class="page-nav__title">На этой странице:</div>
+            {% include page-nav.html list=page.links parent='page-nav' type='ol' %}
+          </nav>
         </aside>
       </div>
 

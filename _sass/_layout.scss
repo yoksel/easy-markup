@@ -68,11 +68,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-
-  @media (max-width: 750px) {
-    line-height: 2;
-  }
+  line-height: 2;
 }
+
   .site-nav__item {
     margin: 0 2rem 0 0 ;
     padding: 0;

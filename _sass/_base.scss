@@ -95,6 +95,10 @@ LI {
     margin-bottom: .5rem;
 }
 
+DL {
+  margin-bottom: 2rem;
+}
+
 DT {
     font-weight: bold;
 }
@@ -121,6 +125,7 @@ CODE {
 
 CODE {
     padding: 1px 5px;
+    // font-family: Courier New, monospace;
 }
 
 PRE {
@@ -134,7 +139,8 @@ PRE {
     }
 }
 
-/* Counters */
+/* Counters
+--------------------------------------------- */
 
 OL {
     counter-reset: list-counter;
@@ -152,10 +158,28 @@ OL > LI {
         content: counter(list-counter) '. ';
     }
 
+.list--has-numbers {
+  list-style-type: decimal;
+}
+
+/* Page Nav
+--------------------------------------------- */
+
+.page-nav {
+  margin-top: 1rem;
+}
+
+.page-nav__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 .page-nav__list {
     list-style-type: decimal;
     font-size: .9em;
 }
+
+/* Footnotes
+--------------------------------------------- */
 
 .footnotes {
     margin: 2rem 0 0;
@@ -174,6 +198,9 @@ OL > LI {
 .footnotes__item:target {
     background: lemonchiffon;
 }
+
+/* Tip
+--------------------------------------------- */
 
 .tip {
   font-style: italic;
