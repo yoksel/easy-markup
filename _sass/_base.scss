@@ -26,10 +26,12 @@ H1, H2, H3, H4, H5 {
 }
 
 H1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.4;
 
     @media (min-width: 800px) {
         font-size: 3.5rem;
+        line-height: $base-line-height;
     }
 
     A,
@@ -166,7 +168,9 @@ OL > LI {
 --------------------------------------------- */
 
 .page-nav {
-  margin-top: 1rem;
+  @media (min-width: 1000px) {
+      margin-top: 1rem;
+  }
 }
 
 .page-nav__title {
