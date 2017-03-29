@@ -20,6 +20,13 @@
             <div class="page-nav__title">На этой странице:</div>
             {% include page-nav.html list=page.links parent='page-nav' type='ol' %}
           </nav>
+
+          {% if page.additional_links %}
+          <nav class="page-nav">
+            <div class="page-nav__title">Полезные ссылки:</div>
+            {% include page-nav.html list=page.additional_links parent='page-nav' type='ol' %}
+          </nav>
+          {% endif %}
         </aside>
       </div>
 
