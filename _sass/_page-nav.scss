@@ -1,0 +1,15 @@
+.page-nav {
+  @media (min-width: 1000px) {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.page-nav__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.page-nav__list {
+  list-style-type: decimal;
+  font-size: .9em;
+}

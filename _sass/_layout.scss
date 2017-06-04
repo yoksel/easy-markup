@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-.container {
+.site-content {
   @include clear;
 }
 
 @media (max-width: 1000px) {
-  .container {
+  .site-content {
     display: flex;
     flex-direction: column;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-/* Site header
+/* Site parts
 --------------------------------------------- */
 
 .site-header {
@@ -58,88 +58,3 @@
 
   @include clear;
 }
-
-/* Site nav
---------------------------------------------- */
-
-.site-nav {
-  @media (min-width: 600px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.site-nav__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  line-height: 2;
-
-  @media (max-width: 600px) {
-    margin-bottom: 1.5rem;
-  }
-}
-
-  .site-nav__item {
-    margin: 0 2rem 0 0 ;
-    padding: 0;
-  }
-
-  .site-nav__item--current A {
-    text-decoration: none;
-    font-weight: bold;
-    color: inherit;
-  }
-
-/* Socials
---------------------------------------------- */
-
-.socials {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-  .socials__item {
-    margin-right: 1rem;
-    margin-bottom: 0;
-  }
-    .socials__icon {
-      transition: all .25s;
-    }
-      .socials__icon--github {
-        color: #000;
-
-        &:hover {
-          color: lighten( #000, 50%);
-        }
-      }
-
-      .socials__icon--twitter {
-        color: #1da1f2;
-
-        &:hover {
-          color: lighten( #1da1f2, 20%);
-        }
-      }
-      .socials__icon svg {
-        display: block;
-        width: 1.4em;
-        height: 1.4em;
-
-        @media (min-width: 800px) {
-          width: 1.2em;
-          height: 1.2em;
-        }
-
-      }
-        .socials__icon path {
-          fill: currentColor;
-      }
-    .socials__username {
-      display: none;
-    }

@@ -3,36 +3,13 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: Trebuchet MS, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #222;
-$background-color: #FFF;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-@mixin clear {
-    clear: both;
-
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-        width: 100%;
-    }
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout"
+    "vars-mixins",
+    "base",
+    "layout",
+    "page-nav",
+    "footnotes",
+    "socials",
+    "site-nav"
 ;

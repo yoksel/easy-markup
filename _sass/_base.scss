@@ -6,21 +6,21 @@ BODY {
     margin: 0;
     padding: 0;
     background-color: $background-color;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: 16px/1.5 Trebuchet MS, sans-serif;
     color: $text-color;
 }
 
 A {
-    color: $brand-color;
+    color: $link-color;
     text-decoration: underline;
     transition: all .25s;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($link-color, 15%);
     }
 
     &:hover {
-        color: lighten($brand-color, 15%);
+        color: lighten($link-color, 15%);
         text-decoration: none;
     }
 }
@@ -35,7 +35,7 @@ H1 {
 
     @media (min-width: 800px) {
         font-size: 3.5rem;
-        line-height: $base-line-height;
+        line-height: 1.5;
     }
 
     A,
@@ -58,6 +58,10 @@ H2 {
 }
     .post__title {
         margin-top: 0;
+
+        .page--index & {
+            display: none;
+        }
     }
 
 H3 {
@@ -176,46 +180,6 @@ OL > LI {
 
 .list--has-numbers {
   list-style-type: decimal;
-}
-
-/* Page Nav
---------------------------------------------- */
-
-.page-nav {
-  @media (min-width: 1000px) {
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-  }
-}
-
-.page-nav__title {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-.page-nav__list {
-    list-style-type: decimal;
-    font-size: .9em;
-}
-
-/* Footnotes
---------------------------------------------- */
-
-.footnotes {
-    margin: 2rem 0 0;
-    padding-top: 1rem;
-    border-top: 1px solid #DDD;
-    list-style-type: decimal;
-    font-size: .9em;
-    color: #777;
-}
-
-.footnotes__item {
-    float: left;
-    clear: both;
-    padding: .3rem .5rem;
-}
-.footnotes__item:target {
-    background: lemonchiffon;
 }
 
 /* Tip
