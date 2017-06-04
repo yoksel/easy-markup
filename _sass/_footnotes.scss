@@ -1,17 +1,18 @@
 .footnotes {
-    margin: 2rem 0 0;
-    padding-top: 1rem;
-    border-top: 1px solid #DDD;
-    list-style-type: decimal;
-    font-size: .9em;
-    color: #777;
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #DDD;
+  list-style-type: decimal;
+  font-size: .9em;
+  color: #777;
 }
 
 .footnotes__item {
-    float: left;
-    clear: both;
-    padding: .3rem .5rem;
+  float: left;
+  clear: both;
+  padding: .3rem .5rem;
 }
+
 .footnotes__item:target {
-    background: lemonchiffon;
+  background: lemonchiffon;
 }
