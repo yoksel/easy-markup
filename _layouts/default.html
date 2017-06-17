@@ -14,6 +14,7 @@
         </main>
 
         <aside class="aside">
+
           <nav class="page-nav">
             <div class="page-nav__title">На этой странице:</div>
             {% include page-nav.html list=page.links parent='page-nav' type='ol' %}
@@ -25,6 +26,15 @@
             {% include page-nav.html list=page.additional_links parent='page-nav' type='ol' %}
           </nav>
           {% endif %}
+
+          {% if page.id=='index' %}
+          <a
+            class="related-project"
+            href="http://yoksel.github.io/easy-css/">
+            <span class="related-project__text">Простой CSS</span>
+          </a>
+          {% endif %}
+
         </aside>
       </div>
 
@@ -33,7 +43,7 @@
     </div>
 
     <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
-    
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
