@@ -10,6 +10,9 @@ BODY {
   color: $text-color;
 }
 
+/* Links
+--------------------------------------------- */
+
 A {
   color: $link-color;
   text-decoration: underline;
@@ -24,6 +27,22 @@ A {
     text-decoration: none;
   }
 }
+
+.post__anchor {
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #DDD;
+  }
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+/* Headers
+--------------------------------------------- */
 
 H1, H2, H3, H4, H5 {
   margin: .5em 0;
@@ -93,6 +112,9 @@ H5 {
   font-size: 1.25rem;
 }
 
+/* Images
+--------------------------------------------- */
+
 FIGURE {
   margin: 0;
 }
@@ -102,6 +124,9 @@ IMG {
   max-width: 100%;
   height: auto;
 }
+
+/* Lists
+--------------------------------------------- */
 
 LI {
   margin-bottom: .5rem;
@@ -125,30 +150,6 @@ DD > DL {
 
 DD:not(:last-child) {
     margin-bottom: .5rem;
-}
-
-PRE,
-CODE {
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  background-color: #EEE;
-  font-size: 15px;
-}
-
-CODE {
-  padding: 1px 5px;
-  // font-family: Courier New, monospace;
-}
-
-PRE {
-  padding: 8px 12px;
-  overflow-x: auto;
-
-  > code {
-      border: 0;
-      padding-right: 0;
-      padding-left: 0;
-  }
 }
 
 /* Counters
@@ -181,6 +182,38 @@ OL > LI {
 
 .list--has-numbers {
   list-style-type: decimal;
+}
+
+/* Codes
+--------------------------------------------- */
+
+PRE,
+CODE {
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  background-color: #EEE;
+  font-size: 15px;
+}
+
+CODE {
+  padding: 1px 5px;
+  // font-family: Courier New, monospace;
+}
+
+PRE {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
+  }
+}
+
+.language-css,
+.language-html {
+  font-size: 13px;
 }
 
 /* Tip
