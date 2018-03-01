@@ -30,7 +30,7 @@ links:
 
 <ol>
     <li>
-        <h3 id="check-html">Проверить HTML</h3>
+        <h3 id="check-html">Проверить HTML <a class="post__anchor" href="#check-html">#</a></h3>
 
         <p>Используйте <a href="https://validator.w3.org/nu/#textarea">валидатор разметки</a>.</p>
 
@@ -40,7 +40,7 @@ links:
     </li>
 
     <li>
-      <h3 id="check-bem">Проверить БЭМ-разметку</h3>
+      <h3 id="check-bem">Проверить БЭМ-разметку <a class="post__anchor" href="#check-bem">#</a></h3>
 
       <p>Используйте <a href="http://yoksel.github.io/html-tree/">Html tree</a>.</p>
 
@@ -48,7 +48,7 @@ links:
     </li>
 
     <li>
-      <h3 id="check-css">Проверить CSS</h3>
+      <h3 id="check-css">Проверить CSS <a class="post__anchor" href="#check-css">#</a></h3>
 
       <h4>Валидация</h4>
 
@@ -65,7 +65,7 @@ npm install -g stylelint
 {% endhighlight %}
 
       <p>Также нужен файл с правилами проверки стилей. Можно взять <a href="https://raw.githubusercontent.com/yoksel/easy-markup/gh-pages/.stylelintrc">мой набор правил</a>, или накликать свой используя <a href="https://maximgatilin.github.io/stylelint-config/">Stylelint Config Generator</a>.</p>
-      
+
       <p>Список правил сохраните в корне проекта в файл с названием <code>.stylelintrc</code> (расширение не нужно).</p>
 
       <p>Файл с правилами можно редактировать под ваши нужды, узнать больше о правилах <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md">можно здесь</a>.</p>
@@ -87,7 +87,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="devices">Проверить страницу на разных размерах экрана</h3>
+      <h3 id="devices">Проверить страницу на разных размерах экрана <a class="post__anchor" href="#devices">#</a></h3>
 
       <p>Используйте эмулятор мобильных устройств, который есть в Хроме. Кнопка включения находится в панели разработчиков, вторая иконка в верхнем ряду:</p>
 
@@ -106,18 +106,18 @@ stylelint "less/**/*.less"
       <img src="../assets/img/devices-list.png" alt="Список устройств">
 
       <p>Такой поход избавляет от необходимости подбирать размер окна руками, а так же позволяет быстро переключаться между вьюпортам, причём именно теми, которые нужны вам.</p>
-      
+
       <p>Не забывайте также проверять макеты на очень широких экранах (1400+), чтобы убедиться что и в этом случае страница не разваливается.</p>
     </li>
 
     <li>
-      <h3 id="check-maket">Проверить страницу на соответствие макету</h3>
+      <h3 id="check-maket">Проверить страницу на соответствие макету <a class="post__anchor" href="#check-maket">#</a></h3>
 
       <p>Используйте <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a>.</p>
     </li>
 
     <li>
-      <h3 id="check-fonts">Проверить шрифты</h3>
+      <h3 id="check-fonts">Проверить шрифты <a class="post__anchor" href="#check-fonts">#</a></h3>
 
       <p>Панель разработчика &rarr; Network &rarr; Fonts.</p>
 
@@ -125,7 +125,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="check-images">Проверить изображения</h3>
+      <h3 id="check-images">Проверить изображения <a class="post__anchor" href="#check-images">#</a></h3>
 
       <p>Панель разработчика &rarr; Network &rarr; Img.</p>
 
@@ -143,20 +143,20 @@ stylelint "less/**/*.less"
 
       <p>В панели устройств меняйте размеры экрана и плотность пикселей и смотрите какие изображения загрузились.</p>
     </li>
-  
+
     <li>
-      <h3 id="check-overflow">Проверить страницу на переполнение контентом</h3>
-      
+      <h3 id="check-overflow">Проверить страницу на переполнение контентом <a class="post__anchor" href="#check-overflow">#</a></h3>
+
       <p>Введите в консоль браузера команду:</p>
-      
+
 {% highlight js %}
 document.body.contentEditable = true
 {% endhighlight %}
-      
-     <p>После этого вы сможете отредактировать любой текстовый элемент на странице и добавить в него текст. Это позволит проверить поведение страницы в случаях когда контента слишком мало или наоборот — слишком много.</p> 
-      
+
+     <p>После этого вы сможете отредактировать любой текстовый элемент на странице и добавить в него текст. Это позволит проверить поведение страницы в случаях когда контента слишком мало или наоборот — слишком много.</p>
+
      <p>При добавлении текста элементы должны тянуться по вертикали, текст не должен упираться в края элемента или обрезаться.</p>
 
-     <p>Статья по теме: <a href="https://isqua.ru/blog/2016/06/19/crash-test-viorstki/">Краш-тест вёрстки</a>.</p>      
-   </li>   
+     <p>Статья по теме: <a href="https://isqua.ru/blog/2016/06/19/crash-test-viorstki/">Краш-тест вёрстки</a>.</p>
+   </li>
 </ol>
