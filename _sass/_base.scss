@@ -1,0 +1,223 @@
+HTML {
+  font-size: 12px;
+}
+
+BODY {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font: 16px/1.5 Trebuchet MS, sans-serif;
+  color: $text-color;
+}
+
+A {
+  color: $link-color;
+  text-decoration: underline;
+  transition: all .25s;
+
+  &:visited {
+    color: darken($link-color, 15%);
+  }
+
+  &:hover {
+    color: lighten($link-color, 15%);
+    text-decoration: none;
+  }
+}
+
+H1, H2, H3, H4, H5 {
+  margin: .5em 0;
+}
+
+H1 {
+  font-size: 2rem;
+  line-height: 1.4;
+
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  A,
+  A:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  A:hover {
+    text-decoration: underline;
+  }
+}
+
+H2 {
+  font-size: 1.8rem;
+
+  @media (min-width: 800px) {
+    font-size: 2.5rem;
+  }
+}
+  .post__title {
+    margin-top: 0;
+
+    .page--index & {
+      display: none;
+    }
+  }
+
+H3 {
+  font-size: 1.5rem;
+
+  @media (min-width: 800px) {
+    font-size: 2rem;
+  }
+
+  SUP {
+    font-size: .7rem;
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+H4 {
+  font-size: 1.2rem;
+
+  @media (min-width: 800px) {
+      font-size: 1.5rem;
+  }
+}
+
+H5 {
+  font-size: 1.25rem;
+}
+
+FIGURE {
+  margin: 0;
+}
+
+IMG {
+  border: 1px solid #DDD;
+  max-width: 100%;
+  height: auto;
+}
+
+LI {
+  margin-bottom: .5rem;
+}
+
+DL {
+  margin-bottom: 2rem;
+}
+
+DT {
+  font-weight: bold;
+}
+
+LI > DL > DT {
+  font-size: 1.1em;
+}
+
+DD > DL {
+  margin-top: .5rem ;
+}
+
+DD:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+PRE,
+CODE {
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  background-color: #EEE;
+  font-size: 15px;
+}
+
+CODE {
+  padding: 1px 5px;
+  // font-family: Courier New, monospace;
+}
+
+PRE {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
+  }
+}
+
+/* Counters
+--------------------------------------------- */
+
+OL {
+  counter-reset: list-counter;
+  list-style: none;
+  padding-left: 0;
+
+  @media (min-width: 600px) {
+    padding-left: 20px;
+  }
+  @media (min-width: 800px) {
+    padding-left: 40px;
+  }
+}
+
+OL OL {
+  list-style-type: decimal;
+  padding-left: 1.2em;
+}
+
+OL > LI {
+  counter-increment: list-counter;
+}
+  OL > LI > H3:before {
+      content: counter(list-counter) '. ';
+  }
+
+.list--has-numbers {
+  list-style-type: decimal;
+}
+
+/* Tip
+--------------------------------------------- */
+
+.tip {
+  font-style: italic;
+}
+
+/* Relative Project Link
+--------------------------------------------- */
+
+.related-project {
+  display: block;
+  max-width: 350px;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 3px solid #EEE;
+  text-align: center;
+}
+.related-project__text {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5em;
+
+  &::before {
+    content: '\1F4D6';
+    position: absolute;
+    left: -1.5em;
+    line-height: 1.6;
+  }
+}
+
+/* Attention
+--------------------------------------------- */
+
+.attention {
+  padding-left: 1.8rem;
+  border-left: 5px solid darkorange;
+}

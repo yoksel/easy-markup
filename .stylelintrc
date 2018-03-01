@@ -1,0 +1,192 @@
+{
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        except: ["blockless-group", "first-nested"],
+        message: "Ожидается пустая строка перед @-правилом"
+      }
+    ],
+    "at-rule-semicolon-newline-after": [
+      "always",
+      {
+        "message": "Каждое @-правило должно быть на новой строке"
+      }
+    ],
+    "block-no-empty": [
+      true,
+      {
+        message: "Пустых блоков быть не должно"
+      }
+    ],
+    "declaration-colon-space-after": [
+      "always",
+      {
+        message: "Ожидается пробел после двоеточия"
+      }
+    ],
+    "declaration-colon-space-before": [
+      "never",
+      {
+        message: "Перед двоеточием не нужен пробел"
+      }
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "message": "Дублирующиеся правила"
+      }
+    ],
+    "declaration-block-no-ignored-properties": [
+      true,
+      {
+        "message": "Это правило не будет работать из-за других правил, заданных для этого элемента"
+      }
+    ],
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+      {
+        "message": "Сокращенная запись перезапишет стили, заданные выше"
+      }
+    ],
+    "declaration-block-semicolon-newline-after": [
+      "always",
+      {
+        message: "Нужна новая строка после точки с запятой"
+      }
+    ],
+    "declaration-block-single-line-max-declarations": [
+      1,
+      {
+        "message": "На строке должно быть только одно правило"
+      }
+    ],
+    "declaration-block-trailing-semicolon": [
+      "always",
+      {
+        "message": "Каждое правило следует заканчивать точкой с запятой"
+      }
+    ],
+    "block-closing-brace-newline-before": [
+      "always",
+      {
+        message: "Закрывающая скобка должна быть на новой строке"
+      }
+    ],
+    "block-no-single-line": [
+      true,
+      {
+        "message": "Не следует писать блок в одну строку"
+      }
+    ],
+    "block-opening-brace-space-before": [
+      "always",
+      {
+        message: "Нужен пробел перед открывающей фигурной скобкой"
+      }
+    ],
+    "block-opening-brace-newline-after": [
+      "always",
+      {
+        "message": "Нужен перенос после открывающей фигурной скобки"
+      }
+    ],
+    "declaration-no-important": [
+      true,
+      {
+        message: "Не следует использовать !important"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        message: "Отступы должны быть кратны 2-м пробелам"
+      }
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        message: "Нулевым значениям можно не указывать единицы измерения"
+      }
+    ],
+    "media-feature-colon-space-after": [
+      "always",
+      {
+        message: "Ожидается пробел после двоеточия в медиавыражении"
+      }
+    ],
+    "no-duplicate-selectors": [
+      true,
+      {
+        "message": "Не следует дублировать селекторы"
+      }
+    ],
+    "number-leading-zero": [
+      "always",
+      {
+        message: "В числовом значении перед точкой ожидается ноль"
+      }
+    ],
+    "number-max-precision": [
+      3,
+      {
+        message: "В значениях достаточно 3-х знаков после запятой"
+      }
+    ],
+    "rule-nested-empty-line-before": [
+        "always",
+        {
+          except: ["first-nested"],
+          message: "Перед вложенным правилом ожидается пустая строка"
+        }
+      ],
+    "rule-non-nested-empty-line-before": [
+      "always",
+      {
+        message: "Ожидается пустая строка перед правилом"
+      }
+    ],
+    "selector-pseudo-element-colon-notation": [
+      "double",
+      {
+        message: "Для псевдоэлементов следует использовать двойное двоеточие"
+      }
+    ],
+    "selector-no-id": [
+      true,
+      {
+        "message": "Для стилизации не следует использовать ID"
+      }
+    ],
+    "selector-list-comma-newline-after": [
+      "always",
+      {
+        message: "Каждый селектор должен быть на новой строке"
+      }
+    ],
+    "string-quotes": [
+      "double",
+      {
+        message: "Ожидаются двойные кавычки"
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "message": "Такого элемента не существует"
+      }
+    ],
+    "value-no-vendor-prefix": [
+      true,
+      {
+        "message": "Не нужно использовать вендорные префиксы"
+      }
+    ],
+    "unit-no-unknown": [
+      true,
+      {
+        "message": "Некорректные единицы измерения"
+      }
+    ],
+  }
+}

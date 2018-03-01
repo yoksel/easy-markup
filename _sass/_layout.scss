@@ -1,0 +1,61 @@
+.wrapper {
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  box-sizing: border-box;
+}
+
+.site-content {
+  @include clear;
+}
+
+@media (max-width: 1000px) {
+  .site-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    order: 1;
+  }
+
+  .aside {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    float: left;
+    width: 100%;
+    padding-right: 320px;
+    box-sizing: border-box;
+  }
+
+  .aside {
+    float: right;
+    margin-left: -300px;
+    width: 300px;
+    padding-top: 1rem;
+  }
+}
+
+/* Site parts
+--------------------------------------------- */
+
+.site-header {
+  margin-bottom: 2em;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #EEE;
+
+  @include clear;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid #EEE;
+
+  @include clear;
+}
