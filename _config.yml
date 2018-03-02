@@ -38,6 +38,14 @@ menu:
  - name: 'Доступность'
    url: '/accessibility/'
 
+projects:
+ - name: 'Простые правила разметки'
+   url: '/'
+ - name: 'Простой CSS'
+   url: 'https://yoksel.github.io/easy-css/'
+ - name: 'HTML & CSS: как не надо'
+   url: 'https://yoksel.github.io/bad-practices/'
+
 socials:
  - name: '@yoksel'
    url: 'https://twitter.com/yoksel'

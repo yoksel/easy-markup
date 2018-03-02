@@ -28,11 +28,10 @@
           {% endif %}
 
           {% if page.id=='index' %}
-          <a
-            class="related-project"
-            href="http://yoksel.github.io/easy-css/">
-            <span class="related-project__text">Простой CSS</span>
-          </a>
+          <nav class="page-nav">
+            <div class="page-nav__title">Проекты по теме:</div>
+            {% include page-nav.html list=site.projects parent='page-nav' type='ol' %}
+          </nav>
           {% endif %}
 
         </aside>

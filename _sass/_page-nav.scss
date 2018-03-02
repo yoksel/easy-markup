@@ -9,6 +9,16 @@
   font-size: 1.25rem;
 }
 .page-nav__list {
-  list-style-type: decimal;
   font-size: .9em;
+}
+  OL.page-nav__list {
+    list-style-type: decimal;
+  }
+
+.page-nav__item--current {
+  A {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
 }

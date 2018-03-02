@@ -128,6 +128,17 @@ IMG {
 /* Lists
 --------------------------------------------- */
 
+OL, UL {
+  padding-left: 0;
+
+  @media (min-width: 600px) {
+    padding-left: 20px;
+  }
+  @media (min-width: 800px) {
+    padding-left: 30px;
+  }
+}
+
 LI {
   margin-bottom: .5rem;
 }
@@ -158,19 +169,15 @@ DD:not(:last-child) {
 OL {
   counter-reset: list-counter;
   list-style: none;
-  padding-left: 0;
-
-  @media (min-width: 600px) {
-    padding-left: 20px;
-  }
-  @media (min-width: 800px) {
-    padding-left: 40px;
-  }
 }
 
 OL OL {
   list-style-type: decimal;
-  padding-left: 1.2em;
+  padding-left: 2.4em;
+
+  @media (min-width: 600px) {
+    padding-left: 3em;
+  }
 }
 
 OL > LI {
