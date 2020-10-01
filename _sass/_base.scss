@@ -1,8 +1,8 @@
-HTML {
+html {
   font-size: 12px;
 }
 
-BODY {
+body {
   margin: 0;
   padding: 0;
   background-color: $background-color;
@@ -13,7 +13,7 @@ BODY {
 /* Links
 --------------------------------------------- */
 
-A {
+a {
   color: $link-color;
   text-decoration: underline;
   transition: all .25s;
@@ -44,11 +44,11 @@ A {
 /* Headers
 --------------------------------------------- */
 
-H1, H2, H3, H4, H5 {
+h1, h2, h3, h4, h5 {
   margin: .5em 0;
 }
 
-H1 {
+h1 {
   font-size: 2rem;
   line-height: 1.4;
 
@@ -57,18 +57,18 @@ H1 {
     line-height: 1.5;
   }
 
-  A,
-  A:visited {
+  a,
+  a:visited {
     text-decoration: none;
     color: inherit;
   }
 
-  A:hover {
+  a:hover {
     text-decoration: underline;
   }
 }
 
-H2 {
+h2 {
   font-size: 1.8rem;
 
   @media (min-width: 800px) {
@@ -78,19 +78,19 @@ H2 {
   .post__title {
     margin-top: 0;
 
-    .page--index & {
+    .page_index & {
       display: none;
     }
   }
 
-H3 {
+h3 {
   font-size: 1.5rem;
 
   @media (min-width: 800px) {
     font-size: 2rem;
   }
 
-  SUP {
+  sup {
     font-size: .7rem;
     opacity: .5;
 
@@ -100,7 +100,7 @@ H3 {
   }
 }
 
-H4 {
+h4 {
   font-size: 1.2rem;
 
   @media (min-width: 800px) {
@@ -108,18 +108,18 @@ H4 {
   }
 }
 
-H5 {
+h5 {
   font-size: 1.25rem;
 }
 
 /* Images
 --------------------------------------------- */
 
-FIGURE {
+figure {
   margin: 0;
 }
 
-IMG {
+img {
   border: 1px solid #DDD;
   max-width: 100%;
   height: auto;
@@ -128,7 +128,7 @@ IMG {
 /* Lists
 --------------------------------------------- */
 
-OL, UL {
+ol, ul {
   padding-left: 0;
 
   @media (min-width: 600px) {
@@ -139,39 +139,39 @@ OL, UL {
   }
 }
 
-LI {
+li {
   margin-bottom: .5rem;
 }
 
-DL {
+dl {
   margin-bottom: 2rem;
 }
 
-DT {
+dt {
   font-weight: bold;
 }
 
-LI > DL > DT {
+li > dl > dt {
   font-size: 1.1em;
 }
 
-DD > DL {
+dd > dl {
   margin-top: .5rem ;
 }
 
-DD:not(:last-child) {
+dd:not(:last-child) {
     margin-bottom: .5rem;
 }
 
 /* Counters
 --------------------------------------------- */
 
-OL {
+ol {
   counter-reset: list-counter;
   list-style: none;
 }
 
-OL OL {
+ol ol {
   list-style-type: decimal;
   padding-left: 2.4em;
 
@@ -180,34 +180,34 @@ OL OL {
   }
 }
 
-OL > LI {
+ol > li {
   counter-increment: list-counter;
 }
-  OL > LI > H3:before {
+  ol > li > h3:before {
       content: counter(list-counter) '. ';
   }
 
-.list--has-numbers {
+.list_has-numbers {
   list-style-type: decimal;
 }
 
 /* Codes
 --------------------------------------------- */
 
-PRE,
-CODE {
+pre,
+code {
   border: 1px solid #DDD;
   border-radius: 3px;
   background-color: #EEE;
   font-size: 15px;
 }
 
-CODE {
+code {
   padding: 1px 5px;
   // font-family: Courier New, monospace;
 }
 
-PRE {
+pre {
   padding: 8px 12px;
   overflow-x: auto;
 

@@ -11,7 +11,7 @@
     .socials__icon {
       transition: all .25s;
     }
-      .socials__icon--github {
+      .socials__icon_github {
         color: #000;
 
         &:hover {
@@ -19,7 +19,7 @@
         }
       }
 
-      .socials__icon--twitter {
+      .socials__icon_twitter {
         color: #1da1f2;
 
         &:hover {
