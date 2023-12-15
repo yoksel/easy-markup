@@ -108,7 +108,7 @@ npm i pixel-glass --save-dev
 
         <p>После этого на странице появится вот такая панель:
         </p>
-        <img src="../assets/img/pixel-glass.png" alt="Панель Pixel Glass">
+        <img src="/img/pixel-glass.png" alt="Панель Pixel Glass">
 
         <p>Она позволит управлять прозрачностью <code>&lt;body></code> или выключить её совсем, если она не нужна.</p>
 
@@ -132,7 +132,7 @@ git clone git@github.com:yoksel/pixel-glass-js.git pixel-glass
 
         <p>При использовании этого способа в какой-то момент текст страницы наложится на текст макета, и получится нечитаемая каша. Чтобы отличить их друг от друга, можно CSS-ом раскрасить текст в яркие цвета (например, <code>color: crimson</code>). Получится примерно вот такое:</p>
 
-        <img src="../assets/img/colored-text.png" alt="Цветной текст">
+        <img src="/img/colored-text.png" alt="Цветной текст">
 
         <p>Сразу видно где страница не совпадает с макетом и что нужно подправить.</p>
     </li>
