@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/node": "20.10.4",
     "@types/react": "18.2.45",
+    "classnames": "^2.3.2",
     "prismjs": "^1.29.0",
     "typescript": "5.3.3"
   }

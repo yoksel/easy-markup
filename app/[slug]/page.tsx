@@ -35,7 +35,7 @@ export default async function Post({params}: any) {
   ]);
   const content = await markdownToHtml(post.content || '');
 
-  return <Layout>
+  return <Layout slug={params.slug}>
     <div dangerouslySetInnerHTML={{__html: content}}></div>
   </Layout>
   // if (!router.isFallback && !post?.slug) {

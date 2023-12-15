@@ -3,13 +3,13 @@ import Nav from '../nav';
 import styles from './layout.module.scss';
 
 interface LayoutProps extends React.PropsWithChildren {
-  pageUrls?: PageUrl[];
+  slug: string
 }
 
-const Layout =({children, pageUrls}: LayoutProps) => {
+const Layout =({children, slug}: LayoutProps) => {
   return (
     <>
-      <Nav/>
+      <Nav slug={slug}/>
       <div className={styles.siteContent}>
         <main className={styles.main}>
           {children}
