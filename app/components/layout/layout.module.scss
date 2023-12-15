@@ -1,4 +1,4 @@
-.page {
+.wrapper {
   min-width: 300px;
   max-width: 1200px;
   margin: 0 auto;
@@ -7,8 +7,6 @@
 }
 
 .main {
-    order: 1;
-    outline: 1px solid red;
     min-height: 200px;
   }
 
@@ -38,20 +36,24 @@
 }
 
 @media (min-width: 1000px) {
-  .main {
-    float: left;
-    width: 100%;
-    padding-right: 320px;
-    box-sizing: border-box;
+  .siteContent {
+    display: grid;
+    grid-template-columns: auto 320px;
   }
+  // .main {
+  //   float: left;
+  //   width: 100%;
+  //   padding-right: 320px;
+  //   box-sizing: border-box;
+  // }
 
-  .aside {
-    float: right;
-    margin-left: -300px;
-    width: 280px;
-    padding-top: 1rem;
+  // .aside {
+  //   float: right;
+  //   margin-left: -300px;
+  //   width: 280px;
+  //   padding-top: 1rem;
 
-    position: sticky;
-    top: 20px;
-  }
+  //   position: sticky;
+  //   top: 20px;
+  // }
 }

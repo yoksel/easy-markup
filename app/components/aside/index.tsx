@@ -1,8 +1,9 @@
+import classNames from 'classNames';
 import styles from './aside.module.scss';
 
-const Aside = () => {
+const Aside = ({className}: {className: string}) => {
   return (
-    <aside className={styles.page}>
+    <aside className={classNames(styles.aside, className) }>
       <ul>
         <li>1</li>
       </ul>

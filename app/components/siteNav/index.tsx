@@ -1,6 +1,6 @@
 import {getAllPosts} from "../../lib/api";
 import Socials from "../socials";
-import styles from "./nav.module.scss";
+import styles from "./siteNav.module.scss";
 import classNames from 'classNames';
 
 interface PageUrl {
@@ -15,7 +15,7 @@ const getPageUrls = (allPosts: PostType[]): PageUrl[] => {
   }})
 }
 
-const Nav = ({slug}: {slug: string}) => {
+const SiteNav = ({slug}: {slug: string}) => {
   const allPosts: any = getAllPosts([
     'title',
     'slug',
@@ -45,4 +45,4 @@ const Nav = ({slug}: {slug: string}) => {
   )
 }
 
-export default Nav;
+export default SiteNav;

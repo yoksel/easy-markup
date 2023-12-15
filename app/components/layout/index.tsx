@@ -1,5 +1,6 @@
 import Aside from '../aside';
-import Nav from '../nav';
+import SiteFooter from '../siteFooter';
+import SiteHeader from '../siteHeader';
 import styles from './layout.module.scss';
 
 interface LayoutProps extends React.PropsWithChildren {
@@ -8,15 +9,16 @@ interface LayoutProps extends React.PropsWithChildren {
 
 const Layout =({children, slug}: LayoutProps) => {
   return (
-    <>
-      <Nav slug={slug}/>
+    <div className={styles.wrapper}>
+      <SiteHeader slug={slug}/>
       <div className={styles.siteContent}>
         <main className={styles.main}>
           {children}
         </main>
-        <Aside/>
+        <Aside className={styles.aside}/>
       </div>
-    </>
+      <SiteFooter slug={slug}/>
+    </div>
   )
 }
 
