@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Примеры кода
-permalink: /examples/
 
 links:
  - name: 'Простой список'
@@ -34,30 +32,30 @@ links:
   <li>
     <h3 id="simple-list">Простой список <a class="post__anchor" href="#simple-list">#</a></h3>
 
-{% highlight html %}
+```html
 <ul class="list">
   <li class="item">Первое</li>
   <li class="item">Второе</li>
   <li class="item">Третье</li>
 </ul>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="userpic">Картинка пользователя (юзерпик) <a class="post__anchor" href="#userpic">#</a></h3>
 
-{% highlight html %}
+```html
 <div class="user">
   <img class="user__img" src="userpic.png" alt="Дормидонт Петрович">
   <a class="user__link" href="#">Дормидонт Петрович</a>
 </div>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="gallery">Галерея <a class="post__anchor" href="#gallery">#</a></h3>
 
-{% highlight html %}
+```html
 <div class="gallery gallery--slider">
   <ul class="gallery__list">
     <li class="gallery__item">
@@ -68,13 +66,13 @@ links:
     </li>
   </ul>
 </div>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="nav-1">Навигация (простой вариант) <a class="post__anchor" href="#nav-1">#</a></h3>
 
-{% highlight html %}
+```html
 <nav class="nav">
   <a class="nav__link nav__link--active">Главная</a>
   <a class="nav__link" href="#">Второстепенная</a>
@@ -82,13 +80,13 @@ links:
   <a class="nav__link" href="#">Предпоследняя</a>
   <a class="nav__link" href="#">Совсем конец</a>
 </nav>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="nav-2">Навигация (сложный вариант) <a class="post__anchor" href="#nav-2">#</a></h3>
 
-{% highlight html %}
+```html
 <nav class="nav">
   <ul class="nav__list">
     <li class="nav__item nav__item--current">
@@ -105,13 +103,13 @@ links:
     </li>
   </ul>
 </nav>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="widget">Виджет в боковой колонке <a class="post__anchor" href="#widget">#</a></h3>
 
-{% highlight html %}
+```html
 <div class="widget">
   <h4 class="widget__tilte">Выращиваем желе</h4>
 
@@ -123,13 +121,13 @@ links:
     <a class="widget__link" href="#">Не читать дальше...</a>
   </div>
 </div>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="news">Блок новостей <a class="post__anchor" href="#news">#</a></h3>
 
-{% highlight html %}
+```html
 <div class="news">
     <h3 class="news__title">Вчерашние новости</h3>
 
@@ -160,13 +158,13 @@ links:
         </li>
     </ul>
 </div>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="simple-article">Статья или пост в блоге (простой вариант) <a class="post__anchor" href="#simple-article">#</a></h3>
 
-{% highlight html %}
+```html
 <article class="article">
   <h3 class="article__title">
     Нащупываем чакры у пучка петрушки
@@ -191,13 +189,13 @@ links:
     по пятам и проращивать свои семена в ваших тапках.
   </div>
 </article>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="article">Статья или пост в блоге (сложный вариант) <a class="post__anchor" href="#article">#</a></h3>
 
-{% highlight html %}
+```html
 <article class="entry">
   <header class="entry__header">
     <h3 class="entry__title title-entry">
@@ -253,13 +251,13 @@ links:
     </li>
   </ul>
 </article>
-{% endhighlight %}
+```
   </li>
 
   <li>
     <h3 id="page-markup">Разметка страницы <a class="post__anchor" href="#page-markup">#</a></h3>
 
-{% highlight html %}
+```html
 <!-- Шапка сайта -->
 <header class="site-header">
   <h1 class="site-header__title">Название сайта</h1>
@@ -313,6 +311,6 @@ links:
     Сделано <a href="#" class="copyright__link">левой пяткой</a>
   </div>
 </footer>
-{% endhighlight %}
+```
   </li>
 </ol>

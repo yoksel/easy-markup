@@ -20,7 +20,8 @@ const projects = [
 
 const Aside = ({className, slug}: {className: string, slug: string}) => {
   const {links, additional_links} = getPostBySlug(slug, [
-    'links'
+    'links',
+    'additional_links'
   ]);
 
   return (

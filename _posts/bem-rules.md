@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Как писать классы по БЭМ?
-type: page
-permalink: /bem-rules/
 
 links:
  - name: 'Простой пример: Блок + Элемент'

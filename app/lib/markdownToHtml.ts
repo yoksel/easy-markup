@@ -7,6 +7,6 @@ function addHighlighting(_, type, code) {
 }
 
 export default async function markdownToHtml(markdown: string) {
-  const withCodeBlocks = markdown.replace(/```(?<type>html|css)(?<code>[^`]+)```/gm, addHighlighting);
+  const withCodeBlocks = markdown.replace(/```(?<type>html|css|js)(?<code>[^`]+)```/gm, addHighlighting);
   return withCodeBlocks
 }

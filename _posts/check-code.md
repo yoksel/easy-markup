@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Тестируем всё
-type: page
-permalink: /check-code/
 
 links:
 - name: 'Проверить HTML'
@@ -60,9 +57,9 @@ links:
 
       <p>Установка:</p>
 
-{% highlight js %}
+```js
 npm install -g stylelint
-{% endhighlight %}
+```
 
       <p>Также нужен файл с правилами проверки стилей. Можно взять <a href="https://raw.githubusercontent.com/yoksel/easy-markup/gh-pages/.stylelintrc">мой набор правил</a>, или накликать свой используя <a href="https://maximgatilin.github.io/stylelint-config/">Stylelint Config Generator</a>.</p>
 
@@ -73,14 +70,14 @@ npm install -g stylelint
       <p>Использование:</p>
 
         <b>SASS:</b>
-{% highlight js %}
+```js
 stylelint "sass/**/*.scss"
-{% endhighlight %}
+```
 
         <b>LESS:</b>
-{% highlight js %}
+```js
 stylelint "less/**/*.less"
-{% endhighlight %}
+```
 
       <p>Команда запускается в папке проекта.</p>
 
@@ -149,9 +146,9 @@ stylelint "less/**/*.less"
 
       <p>Введите в консоль браузера команду:</p>
 
-{% highlight js %}
+```js
 document.body.contentEditable = true
-{% endhighlight %}
+```
 
      <p>После этого вы сможете отредактировать любой текстовый элемент на странице и добавить в него текст. Это позволит проверить поведение страницы в случаях когда контента слишком мало или наоборот — слишком много.</p>
 

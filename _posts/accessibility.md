@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Доступность
-type: page
-permalink: /accessibility/
 
 links:
  - url: '#accessibility-important'
@@ -79,23 +76,20 @@ additional_links:
 
     <p>Иногда бывает, что на странице есть какой-то самостоятельный раздел, но по макету у него нет заголовка. Получается, что эта часть страницы не будет представлена в оглавлении, которым пользуются читалки. Проблему можно решить добавив заголовок, который затем будет скрыт с помощью CSS. Скрывать рекомендуется таким кодом (<a href="https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually">источник</a>):</p>
 
-{% highlight css %}
+```css
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-{% endhighlight %}
+```
 
     <p>Такого заголовка не будет на странице, но скринридеры прочитают его без труда. Также это решает задачу с тем, что по спецификации у <code>section</code> и <code>article</code> <a href="https://www.w3.org/TR/html5/sections.html#the-section-element">должны быть заголовки</a>: если они не предусмотрены по макету, просто добавьте скрытые.</p>
 

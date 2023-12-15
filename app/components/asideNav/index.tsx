@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./asideNav.module.scss";
 
 const AsideNav = ({title, links}) => {
@@ -9,7 +10,7 @@ const AsideNav = ({title, links}) => {
       <ol className={styles.pageNav__list}>
         {links.map(item => {
           return <li className={styles.pageNav__item}>
-            <a href={item.url}>{item.name}</a>
+            <Link href={item.url}>{item.name}</Link>
           </li>
         })}
       </ol>

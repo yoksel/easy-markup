@@ -26,15 +26,14 @@ export default async function Post({params}: any) {
   // const title = `${post?.title} | Next.js Blog Example with ...`
   const post = getPostBySlug(params.slug, [
     'title',
-    'date',
     'slug',
-    'author',
     'content',
     'links'
   ]);
   const content = await markdownToHtml(post.content || '');
 
   return <Layout slug={params.slug}>
+    <h2>{post.title}</h2>
     <div dangerouslySetInnerHTML={{__html: content}}></div>
   </Layout>
 }

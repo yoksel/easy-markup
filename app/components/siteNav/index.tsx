@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {getAllPosts} from "../../lib/api";
 import Socials from "../socials";
 import styles from "./siteNav.module.scss";
@@ -36,7 +37,7 @@ const SiteNav = ({slug}: {slug: string}) => {
               )}
               key={index}
             >
-              <a href={url}>{item.name}</a>
+              <Link href={url}>{item.name}</Link>
             </li>
           )
         })}

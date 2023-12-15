@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Капля магии
-type: page
-permalink: /drop-of-magic/
 
 links:
  - name: 'Цель вижу, в себя верю!'
@@ -30,19 +27,19 @@ additional_links:
 
         <p>Чтобы аккуратно сверстать макет, ничего не потеряв по дороге, нужно или обладать хорошей зрительной памятью, или постоянно сверяться с макетом. Второе отнимает массу времени, и всё равно можно что-то упустить. Для решения проблемы можно просто подложить макет под страницу:</p>
 
-{% highlight html %}
+```html
 <style>
   HTML {
     background: url( 'img/page.jpg' ) 50% 0 no-repeat;
   }
 </style>
-{% endhighlight %}
+```
 
         <p>Код вставляется в элемент <code>&lt;head></code>.</p>
 
         <p>Если у вас есть макеты для разных разрешений экрана, их можно менять с помощью медиавыражений:</p>
 
-{% highlight html %}
+```html
 <style>
   HTML {
     background: url( 'img/page-mobile.jpg' ) 50% 0 no-repeat;
@@ -60,11 +57,11 @@ additional_links:
     }
   }
 </style>
-{% endhighlight %}
+```
 
         <p>Чтобы фоны и картинки на странице не загораживали макеты, можно добавить <code>opacity</code> для <code>&lt;body></code>:</p>
 
-{% highlight html %}
+```html
 <style>
   HTML {
     background: url( 'img/page-mobile.jpg' ) 50% 0 no-repeat;
@@ -86,7 +83,7 @@ additional_links:
     opacity: .5;
   }
 </style>
-{% endhighlight %}
+```
 
         <p>Чтобы удобно управлять прозрачностью, можно установить <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a>:</p>
 
@@ -94,17 +91,17 @@ additional_links:
         <ol>
           <li>Установите скрипт в папку с проектом:
 
-{% highlight js %}
+```js
 npm i pixel-glass --save-dev
-{% endhighlight %}
+```
           </li>
 
           <li> Добавьте в <code>&lt;head></code> подключение файлов скрипта:
 
-{% highlight html %}
+```html
 <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
 <script src="../node_modules/pixel-glass/script.js"></script>
-{% endhighlight %}
+```
 
           </li>
         </ol>
@@ -119,16 +116,16 @@ npm i pixel-glass --save-dev
         <p><b>Внимание:</b> если локальный сервер смотрит не в корень проекта, а в другую директорию (например, <code>source</code>), при запуске сервера npm-пакеты окажутся снаружи этой директории, и будут недоступны. В этом случае pixel-glass нужно устанавливать в директорию, куда смотрит сервер, склонировав туда пакет с гитхаба:</p>
 
 
-{% highlight js %}
+```js
 git clone git@github.com:yoksel/pixel-glass-js.git pixel-glass
-{% endhighlight %}
+```
 
 <p>И подключать скрипты и стили оттуда:</p>
 
-{% highlight html %}
+```html
 <link href="../pixel-glass/styles.css" rel="stylesheet">
 <script src="../pixel-glass/script.js"></script>
-{% endhighlight %}
+```
 </div>
 
         <p>Таким образом макеты будут всё время перед глазами и вам не придётся тратить время на переключение в графический редактор и обратно. Особенно это удобно при работе на маленьком экране, когда не получается разместить рядом фотошоп и браузер.</p>
@@ -144,17 +141,17 @@ git clone git@github.com:yoksel/pixel-glass-js.git pixel-glass
 
         <p>Раскладывая элементы по странице, очень удобно видеть где они начинаются и где заканчиваются. Самый простой способ добавить границы выглядит так: </p>
 
-{% highlight css %}
+```css
 .yourclass {
     outline: 2px solid deeppink;
 }
-{% endhighlight %}
+```
 
         <p>Почему <code>outline</code>, а не <code>border</code>? <code>outline</code> не влияет на блочную модель элемента и не меняет его размеры, как это делает <code>border</code>.</p>
 
         <p>Чтобы добавить обводки сразу нескольким крупным блокам, можно использовать такой код:</p>
 
-{% highlight css %}
+```css
 BODY > * {
     outline: 2px solid deeppink;
 }
@@ -166,7 +163,7 @@ BODY > * > * > * {
     outline: 2px dotted dodgerblue;
     outline-offset: -4px;
 }
-{% endhighlight %}
+```
 
         <p>В действии это выглядит примерно так:</p>
 
