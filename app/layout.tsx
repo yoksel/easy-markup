@@ -1,4 +1,5 @@
 import './global.scss';
+import './prism.scss';
 
 export const RootLayout = ({children}: React.PropsWithChildren) => {
   return (

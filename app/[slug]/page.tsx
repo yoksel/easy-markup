@@ -33,12 +33,10 @@ export default async function Post({params}: any) {
     'ogImage',
     'coverImage',
   ]);
-  const content = await markdownToHtml(post.content || '')
-
-  // console.log('hello', params, post);
+  const content = await markdownToHtml(post.content || '');
 
   return <Layout>
-    <div dangerouslySetInnerHTML={{__html: post.content}}></div>
+    <div dangerouslySetInnerHTML={{__html: content}}></div>
   </Layout>
   // if (!router.isFallback && !post?.slug) {
   //   return <ErrorPage statusCode={404} />

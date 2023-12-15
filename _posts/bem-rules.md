@@ -38,9 +38,9 @@ links:
 
 ```html
 <div>
-<h3>Заголовок</h3>
-<div>Текст</div>
-<button>Кнопка</button>
+  <h3>Заголовок</h3>
+  <div>Текст</div>
+  <button>Кнопка</button>
 </div>
 ```
 
@@ -48,9 +48,9 @@ links:
 
 ```html
 <div class="popup">
-<h3>Заголовок</h3>
-<div>Текст</div>
-<button>Кнопка</button>
+  <h3>Заголовок</h3>
+  <div>Текст</div>
+  <button>Кнопка</button>
 </div>
 ```
 
@@ -58,9 +58,9 @@ links:
 
 ```html
 <div class="popup">
-<h3 class="title">Заголовок</h3>
-<div class="text">Текст</div>
-<button class="button">Кнопка</button>
+  <h3 class="title">Заголовок</h3>
+  <div class="text">Текст</div>
+  <button class="button">Кнопка</button>
 </div>
 ```
 
@@ -70,9 +70,9 @@ links:
 
 ```html
 <div class="popup">
-<h3 class="popup__title">Заголовок</h3>
-<div class="popup__text">Текст</div>
-<button class="popup__button">Кнопка</button>
+  <h3 class="popup__title">Заголовок</h3>
+  <div class="popup__text">Текст</div>
+  <button class="popup__button">Кнопка</button>
 </div>
 ```
 
@@ -86,8 +86,8 @@ links:
 
 ```html
 <div class="message">
-<h3 class="message__title">Заголовок сообщения</h3>
-<div class="message__text">Текст сообщения</div>
+  <h3 class="message__title">Заголовок сообщения</h3>
+  <div class="message__text">Текст сообщения</div>
 </div>
 ```
 
@@ -95,31 +95,29 @@ links:
 
 ```html
 <div class="message message--success">
-<h3 class="message__title">Заголовок сообщения</h3>
-<div class="message__text">Текст сообщения</div>
+  <h3 class="message__title">Заголовок сообщения</h3>
+  <div class="message__text">Текст сообщения</div>
 </div>
 
 <div class="message message--error">
-<h3 class="message__title">Заголовок сообщения</h3>
-<div class="message__text">Текст сообщения</div>
+  <h3 class="message__title">Заголовок сообщения</h3>
+  <div class="message__text">Текст сообщения</div>
 </div>
 ```
 
   <p>Обоим элементам можно добавить одинаковые стили используя общий класс <code>.message</code> и так же легко можно добавить отдельные стили для каждого из них, используя уникальный класс с модификатором:</p>
 
-{% highlight css %}
-
+```css
 .message {
-border: 1px solid gray;
+  border: 1px solid gray;
 }
 .message--success {
-border-color: green;
+  border-color: green;
 }
 
 .message--error {
-border-color: red;
+  border-color: red;
 }
-
 ```
 
     <p>Оба сообщения будут иметь рамку толщиной один пиксель, но для сообщения об успешной операции она будет зелёной, а для сообщения об ошибке — красной.</p>
@@ -132,12 +130,12 @@ border-color: red;
 
 ```html
 <div class="news">
-<h3>Новости</h3>
+  <h3>Новости</h3>
 
-<ul>
-  <li><!-- новость --></li>
-  <li><!-- новость --></li>
-</ul>
+  <ul>
+    <li><!-- новость --></li>
+    <li><!-- новость --></li>
+  </ul>
 </div>
 ```
 
@@ -145,12 +143,12 @@ border-color: red;
 
 ```html
 <div class="news">
-<h3 class="news__title">Новости</h3>
+  <h3 class="news__title">Новости</h3>
 
-<ul class="news__list">
-  <li class="news__item"><!-- новость --></li>
-  <li class="news__item"><!-- новость --></li>
-</ul>
+  <ul class="news__list">
+    <li class="news__item"><!-- новость --></li>
+    <li class="news__item"><!-- новость --></li>
+  </ul>
 </div>
 ```
 
@@ -158,21 +156,21 @@ border-color: red;
 
 ```html
 <div class="news">
-<h3 class="news__title">Новости</h3>
+  <h3 class="news__title">Новости</h3>
 
-<ul class="news__list">
-  <li class="news__item">
-    <h4>Заголовок новости</h4>
-    <p>Текст новости</p>
-  </li>
-  <li class="news__item"><!-- новость --></li>
-</ul>
+  <ul class="news__list">
+    <li class="news__item">
+      <h4>Заголовок новости</h4>
+      <p>Текст новости</p>
+    </li>
+    <li class="news__item"><!-- новость --></li>
+  </ul>
 </div>
 ```
 
     <p>Нам нужно добавить класс заголовку новости. Первым делом приходит в голову <code>.news__title</code>, но такой класс уже занят. Предположим, что второй элемент будет не <code>.title</code>, а <code>.subject</code>, тогда в CSS получается такое:</p>
 
-{% highlight css %}
+```css
 .news__title { ... }
 .news__subject { ... }
 ```
@@ -185,21 +183,21 @@ border-color: red;
 
 ```html
 <div class="news">
-<h3 class="news__title">Новости</h3>
+  <h3 class="news__title">Новости</h3>
 
-<ul class="news__list">
-  <li class="news__item news-item">
-    <h4 class="news-item__title">Заголовок новости</h4>
-    <p class="news-item__text">Текст новости</p>
-  </li>
-  <li class="news__item"><!-- новость --></li>
-</ul>
+  <ul class="news__list">
+    <li class="news__item news-item">
+      <h4 class="news-item__title">Заголовок новости</h4>
+      <p class="news-item__text">Текст новости</p>
+    </li>
+    <li class="news__item"><!-- новость --></li>
+  </ul>
 </div>
 ```
 
     <p>Проблема решена: нам больше не нужно использовать монструозные классы, при этом класс точно описывает элемент, и в CSS будет сразу понятно какой класс за что отвечает: </p>
 
-{% highlight css %}
+```css
 .news__title { ... }
 .news-item__title { ... }
 ```
