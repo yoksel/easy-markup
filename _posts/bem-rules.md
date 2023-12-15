@@ -111,6 +111,7 @@ links:
 .message {
   border: 1px solid gray;
 }
+
 .message--success {
   border-color: green;
 }
