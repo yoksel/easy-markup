@@ -5,11 +5,11 @@ const AsideNav = ({title, links}) => {
   if(!links?.length) return null;
 
   return (
-    <nav className={styles.pageNav}>
-      <div className={styles.pageNav__title}>{title}</div>
-      <ol className={styles.pageNav__list}>
+    <nav className={styles.asideNav}>
+      <div className={styles.asideNav__title}>{title}</div>
+      <ol className={styles.asideNav__list}>
         {links.map(item => {
-          return <li className={styles.pageNav__item}>
+          return <li className={styles.asideNav__item}>
             <Link href={item.url}>{item.name}</Link>
           </li>
         })}
