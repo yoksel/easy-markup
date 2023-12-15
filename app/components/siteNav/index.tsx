@@ -26,6 +26,8 @@ const SiteNav = ({slug}: {slug: string}) => {
     <nav className={styles.siteNav}>
       <ul className={styles.siteNav__list}>
         {pageUrls.map((item, index) => {
+          const url = item.url === 'index' ? '/' : item.url;
+
           return (
             <li
               className={classNames(
@@ -34,7 +36,7 @@ const SiteNav = ({slug}: {slug: string}) => {
               )}
               key={index}
             >
-              <a href={item.url}>{item.name}</a>
+              <a href={url}>{item.name}</a>
             </li>
           )
         })}

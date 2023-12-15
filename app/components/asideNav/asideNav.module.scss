@@ -1,21 +1,21 @@
-.pageNav {
+.asideNav {
   @media (min-width: 1000px) {
     margin-bottom: 2rem;
   }
 }
 
-.pageNav__title {
+.asideNav__title {
   font-weight: bold;
   font-size: 1.25rem;
 }
-.pageNav__list {
+.asideNav__list {
   font-size: .9em;
 }
-  OL.pageNav__list {
+  OL.asideNav__list {
     list-style-type: decimal;
   }
 
-.pageNav__itemCurrent {
+.asideNav__itemCurrent {
   A {
     font-weight: bold;
     text-decoration: none;

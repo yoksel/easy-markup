@@ -30,41 +30,11 @@ export default async function Post({params}: any) {
     'slug',
     'author',
     'content',
-    'ogImage',
-    'coverImage',
+    'links'
   ]);
   const content = await markdownToHtml(post.content || '');
 
   return <Layout slug={params.slug}>
     <div dangerouslySetInnerHTML={{__html: content}}></div>
   </Layout>
-  // if (!router.isFallback && !post?.slug) {
-  //   return <ErrorPage statusCode={404} />
-  // }
-  // return (
-  //   <Layout preview={preview}>
-  //     <Container>
-  //       <Header />
-  //       {router.isFallback ? (
-  //         <PostTitle>Loading…</PostTitle>
-  //       ) : (
-  //         <>
-  //           <article className="mb-32">
-  //             <Head>
-  //               <title>{title}</title>
-  //               <meta property="og:image" content={post.ogImage.url} />
-  //             </Head>
-  //             <PostHeader
-  //               title={post.title}
-  //               coverImage={post.coverImage}
-  //               date={post.date}
-  //               author={post.author}
-  //             />
-  //             <PostBody content={post.content} />
-  //           </article>
-  //         </>
-  //       )}
-  //     </Container>
-  //   </Layout>
-  // )
 }

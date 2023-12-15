@@ -15,7 +15,7 @@ const Layout =({children, slug}: LayoutProps) => {
         <main className={styles.main}>
           {children}
         </main>
-        <Aside className={styles.aside}/>
+        <Aside slug={slug} className={styles.aside}/>
       </div>
       <SiteFooter slug={slug}/>
     </div>
