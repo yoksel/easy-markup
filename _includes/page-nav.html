@@ -1,5 +1,0 @@
-<{% if include.type %}{{ include.type }}{% else %}ul{% endif %} class="{{ include.parent }}__list">{% for link in include.list %}
-    <li class="{{ include.parent }}__item {% if link.url == page.url %} {{ include.parent }}__item--current {% endif %}">
-    <a {% if link.url != page.url %} href="{{ link.url }}" {% endif %}>{{ link.name }}</a>
-    </li>{% endfor %}
-</{% if include.type %}{{ include.type }}{% else %}ul{% endif %}>

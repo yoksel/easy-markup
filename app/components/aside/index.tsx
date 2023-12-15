@@ -1,6 +1,6 @@
 import classNames from 'classNames';
 import styles from './aside.module.scss';
-import {getPostBySlug} from '../../lib/api';
+import {getPostBySlug} from '../../utils/api';
 import AsideNav from '../asideNav';
 
 const projects = [

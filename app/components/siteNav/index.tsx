@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {getAllPosts} from "../../lib/api";
+import {getAllPosts} from "../../utils/api";
 import Socials from "../socials";
 import styles from "./siteNav.module.scss";
 import classNames from 'classNames';

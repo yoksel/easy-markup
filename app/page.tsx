@@ -1,6 +1,6 @@
 import Layout from './components/layout'
-import { getPostBySlug } from './lib/api'
-import markdownToHtml from './lib/markdownToHtml';
+import { getPostBySlug } from './utils/api'
+import markdownToHtml from './utils/markdownToHtml';
 
 export default async function App() {
   const post = getPostBySlug('index', [
