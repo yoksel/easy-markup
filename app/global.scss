@@ -1,6 +1,6 @@
-$text-color:       #222;
-$background-color: #FFF;
-$link-color:      #2a7ae2;
+$text-color: #222;
+$background-color: #fff;
+$link-color: #2a7ae2;
 
 HTML {
   font-size: 12px;
@@ -10,7 +10,9 @@ BODY {
   margin: 0;
   padding: 0;
   background-color: $background-color;
-  font: 16px/1.5 Trebuchet MS, sans-serif;
+  font:
+    16px/1.5 Trebuchet MS,
+    sans-serif;
   color: $text-color;
 }
 
@@ -20,7 +22,7 @@ BODY {
 A {
   color: $link-color;
   text-decoration: underline;
-  transition: all .25s;
+  transition: all 0.25s;
 
   &:visited {
     color: darken($link-color, 15%);
@@ -33,11 +35,10 @@ A {
 }
 
 .post__anchor {
-
   &:link,
   &:visited {
     text-decoration: none;
-    color: #DDD;
+    color: #ddd;
   }
 
   &:hover {
@@ -48,8 +49,12 @@ A {
 /* Headers
 --------------------------------------------- */
 
-H1, H2, H3, H4, H5 {
-  margin: .5em 0;
+H1,
+H2,
+H3,
+H4,
+H5 {
+  margin: 0.5em 0;
 }
 
 H1 {
@@ -79,13 +84,13 @@ H2 {
     font-size: 2.5rem;
   }
 }
-  .post__title {
-    margin-top: 0;
+.post__title {
+  margin-top: 0;
 
-    .page--index & {
-      display: none;
-    }
+  .page--index & {
+    display: none;
   }
+}
 
 H3 {
   font-size: 1.5rem;
@@ -95,8 +100,8 @@ H3 {
   }
 
   SUP {
-    font-size: .7rem;
-    opacity: .5;
+    font-size: 0.7rem;
+    opacity: 0.5;
 
     &:hover {
       opacity: 1;
@@ -108,7 +113,7 @@ H4 {
   font-size: 1.2rem;
 
   @media (min-width: 800px) {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -124,7 +129,7 @@ FIGURE {
 }
 
 IMG {
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   max-width: 100%;
   height: auto;
 }
@@ -132,7 +137,8 @@ IMG {
 /* Lists
 --------------------------------------------- */
 
-OL, UL {
+OL,
+UL {
   padding-left: 0;
 
   @media (min-width: 600px) {
@@ -144,7 +150,7 @@ OL, UL {
 }
 
 LI {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 DL {
@@ -160,11 +166,11 @@ LI > DL > DT {
 }
 
 DD > DL {
-  margin-top: .5rem ;
+  margin-top: 0.5rem;
 }
 
 DD:not(:last-child) {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Counters
@@ -187,9 +193,9 @@ OL OL {
 OL > LI {
   counter-increment: list-counter;
 }
-  OL > LI > H3:before {
-      content: counter(list-counter) '. ';
-  }
+OL > LI > H3:before {
+  content: counter(list-counter) ". ";
+}
 
 .list--has-numbers {
   list-style-type: decimal;
@@ -200,9 +206,9 @@ OL > LI {
 
 PRE,
 CODE {
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-radius: 3px;
-  background-color: #EEE;
+  background-color: #eee;
   font-size: 15px;
 }
 
@@ -216,9 +222,9 @@ PRE {
   overflow-x: auto;
 
   > code {
-      border: 0;
-      padding-right: 0;
-      padding-left: 0;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -242,7 +248,7 @@ PRE {
   max-width: 350px;
   margin-top: 3rem;
   padding: 1rem;
-  border: 3px solid #EEE;
+  border: 3px solid #eee;
   text-align: center;
 }
 .related-project__text {
@@ -251,7 +257,7 @@ PRE {
   margin-left: 1.5em;
 
   &::before {
-    content: '\1F4D6';
+    content: "\1F4D6";
     position: absolute;
     left: -1.5em;
     line-height: 1.6;

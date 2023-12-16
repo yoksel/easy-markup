@@ -4,22 +4,23 @@ import SiteHeader from '../siteHeader';
 import styles from './layout.module.scss';
 
 interface LayoutProps extends React.PropsWithChildren {
-  slug: string
+  slug: string;
 }
 
-const Layout =({children, slug}: LayoutProps) => {
+const Layout = ({ children, slug }: LayoutProps) => {
   return (
     <div className={styles.wrapper}>
-      <SiteHeader slug={slug}/>
+      <SiteHeader slug={slug} />
       <div className={styles.siteContent}>
-        <main className={styles.main}>
-          {children}
-        </main>
-        <Aside slug={slug} className={styles.aside}/>
+        <main className={styles.main}>{children}</main>
+        <Aside
+          slug={slug}
+          className={styles.aside}
+        />
       </div>
-      <SiteFooter slug={slug}/>
+      <SiteFooter slug={slug} />
     </div>
-  )
-}
+  );
+};
 
 export default Layout;

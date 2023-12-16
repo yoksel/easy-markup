@@ -9,11 +9,10 @@
 title: Простые правила разметки
 description: > # this means to ignore newlines until "baseurl:"
   Простые правила разметки HTML-документов, рекомендации по выбору HTML-элементов, примеры кода
-baseurl: '/easy-markup' # the subpath of your site, e.g. /blog
-
+baseurl: "/easy-markup" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: yoksel
-github_username:  yoksel
+github_username: yoksel
 
 # Build settings
 markdown: kramdown
@@ -21,33 +20,33 @@ highlighter: rouge
 permalink: /title/
 
 menu:
- - name: 'Введение'
-   url: '/'
- - name: 'Первые шаги'
-   url: '/first-steps/'
- - name: 'Как писать классы по БЭМ?'
-   url: '/bem-rules/'
- - name: 'Примеры кода'
-   url: '/examples/'
- - name: 'Капля магии'
-   url: '/drop-of-magic/'
- - name: 'Тестируем всё'
-   url: '/check-code/'
- - name: 'Поиск ошибок'
-   url: '/catching-bugs/'
- - name: 'Доступность'
-   url: '/accessibility/'
+  - name: "Введение"
+    url: "/"
+  - name: "Первые шаги"
+    url: "/first-steps/"
+  - name: "Как писать классы по БЭМ?"
+    url: "/bem-rules/"
+  - name: "Примеры кода"
+    url: "/examples/"
+  - name: "Капля магии"
+    url: "/drop-of-magic/"
+  - name: "Тестируем всё"
+    url: "/check-code/"
+  - name: "Поиск ошибок"
+    url: "/catching-bugs/"
+  - name: "Доступность"
+    url: "/accessibility/"
 
 projects:
- - name: 'Простые правила разметки'
-   url: '/'
- - name: 'Простой CSS'
-   url: 'https://yoksel.github.io/easy-css/'
- - name: 'HTML & CSS: как не надо'
-   url: 'https://yoksel.github.io/bad-practices/'
+  - name: "Простые правила разметки"
+    url: "/"
+  - name: "Простой CSS"
+    url: "https://yoksel.github.io/easy-css/"
+  - name: "HTML & CSS: как не надо"
+    url: "https://yoksel.github.io/bad-practices/"
 
 socials:
- - name: '@yoksel'
-   url: 'https://twitter.com/yoksel'
- - name: 'Проект на GitHub'
-   url: 'https://github.com/yoksel/easy-markup/'
+  - name: "@yoksel"
+    url: "https://twitter.com/yoksel"
+  - name: "Проект на GitHub"
+    url: "https://github.com/yoksel/easy-markup/"

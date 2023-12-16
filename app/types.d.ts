@@ -1,15 +1,15 @@
 type PostType = {
-  slug: string
-  title: string
-  date: string
-  coverImage: string
+  slug: string;
+  title: string;
+  date: string;
+  coverImage: string;
   // author: Author
-  excerpt: string
+  excerpt: string;
   ogImage: {
-    url: string
-  }
-  content: string
-}
+    url: string;
+  };
+  content: string;
+};
 
 interface PageUrl {
   url: string;

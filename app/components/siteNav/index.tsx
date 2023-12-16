@@ -1,7 +1,7 @@
-import Link from "next/link";
-import {getAllPosts} from "../../utils/api";
-import Socials from "../socials";
-import styles from "./siteNav.module.scss";
+import Link from 'next/link';
+import { getAllPosts } from '../../utils/api';
+import Socials from '../socials';
+import styles from './siteNav.module.scss';
 import classNames from 'classNames';
 
 interface PageUrl {
@@ -10,18 +10,16 @@ interface PageUrl {
 }
 
 const getPageUrls = (allPosts: PostType[]): PageUrl[] => {
-  return allPosts.map(item => {return {
-    name: item.title,
-    url: item.slug
-  }})
-}
+  return allPosts.map((item) => {
+    return {
+      name: item.title,
+      url: item.slug,
+    };
+  });
+};
 
-const SiteNav = ({slug}: {slug: string}) => {
-  const allPosts: any = getAllPosts([
-    'title',
-    'slug',
-    'order'
-  ]);
+const SiteNav = ({ slug }: { slug: string }) => {
+  const allPosts: any = getAllPosts(['title', 'slug', 'order']);
   const pageUrls = getPageUrls(allPosts);
 
   return (
@@ -34,19 +32,19 @@ const SiteNav = ({slug}: {slug: string}) => {
             <li
               className={classNames(
                 styles.siteNav__item,
-                slug === item.url && styles.siteNav__itemCurrent
+                slug === item.url && styles.siteNav__itemCurrent,
               )}
               key={index}
             >
               <Link href={url}>{item.name}</Link>
             </li>
-          )
+          );
         })}
       </ul>
 
-      <Socials/>
+      <Socials />
     </nav>
-  )
-}
+  );
+};
 
 export default SiteNav;

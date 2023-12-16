@@ -7,11 +7,11 @@
 }
 
 .main {
-    min-height: 200px;
-  }
+  min-height: 200px;
+}
 
 .siteContent::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   clear: both;

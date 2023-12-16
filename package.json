@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "http://yoksel.github.io/easy-markup",
   "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier './app/**/*.ts*' --write"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +23,7 @@
     "@types/node": "20.10.4",
     "@types/react": "18.2.45",
     "classnames": "^2.3.2",
+    "prettier": "^3.1.1",
     "prismjs": "^1.29.0",
     "typescript": "5.3.3"
   }

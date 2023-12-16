@@ -4,42 +4,43 @@
   margin: 0;
   padding: 0;
 }
-  .socials__item {
-    margin-right: 1rem;
-    margin-bottom: 0;
+
+.socials__item {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.socials__icon {
+  transition: all 0.25s;
+}
+
+.socials__icon--github {
+  color: #000;
+
+  &:hover {
+    color: lighten(#000, 50%);
   }
-    .socials__icon {
-      transition: all .25s;
-    }
-      .socials__icon--github {
-        color: #000;
+}
 
-        &:hover {
-          color: lighten( #000, 50%);
-        }
-      }
+.socials__icon--twitter {
+  color: #1da1f2;
 
-      .socials__icon--twitter {
-        color: #1da1f2;
+  &:hover {
+    color: lighten(#1da1f2, 20%);
+  }
+}
 
-        &:hover {
-          color: lighten( #1da1f2, 20%);
-        }
-      }
-      .socials__icon svg {
-        display: block;
-        width: 1.4em;
-        height: 1.4em;
+.socials__icon svg {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
 
-        @media (min-width: 800px) {
-          width: 1.2em;
-          height: 1.2em;
-        }
+  @media (min-width: 800px) {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
 
-      }
-        .socials__icon path {
-          fill: currentColor;
-      }
-    .socials__username {
-      display: none;
-    }
+.socials__icon path {
+  fill: currentColor;
+}
