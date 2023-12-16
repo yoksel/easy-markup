@@ -1,14 +1,40 @@
 import { getPostBySlug } from '../utils/api';
-import Head from 'next/head';
 import markdownToHtml from '../utils/markdownToHtml';
 import Layout from '../components/layout';
 import styles from './styles.module.scss';
+import config from '../../config.json';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: { slug: string };
+};
+
+export function generateMetadata({ params }: Props): Metadata {
+  const { slug } = params;
+
+  // WTF
+  if (slug === 'favicon.ico') {
+    return null;
+  }
+
+  const post = getPostBySlug({
+    slug,
+    fields: ['title'],
+  });
+
+  return {
+    title: `${config.title} • ${post.title}`,
+    description: config.description,
+  };
+}
 
 export default async function Post({ params }: any) {
-  // const router = useRouter()
-  // const { post, morePosts, preview } = props;
-  // const title = `${post?.title} | Next.js Blog Example with ...`
   const { slug } = params;
+
+  if (slug === 'favicon.ico') {
+    return null;
+  }
+
   const post = getPostBySlug({
     slug,
     fields: ['title', 'slug', 'content', 'links'],

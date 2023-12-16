@@ -19,6 +19,11 @@ interface GetPostBySlugArgs {
 
 export function getPostBySlug(args: GetPostBySlugArgs): Post {
   const { slug, fields = [] } = args;
+
+  if (slug === 'favicon.ico') {
+    return null;
+  }
+
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
