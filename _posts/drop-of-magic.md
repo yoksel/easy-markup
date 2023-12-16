@@ -3,17 +3,17 @@ title: Капля магии
 order: 4
 
 links:
- - name: 'Цель вижу, в себя верю!'
+ - text: 'Цель вижу, в себя верю!'
    url: '#target'
- - name: 'Всем выйти из сумрака!'
+ - text: 'Всем выйти из сумрака!'
    url: '#dusk'
 
 additional_links:
- - name: 'Центрирование в CSS: полное руководство'
+ - text: 'Центрирование в CSS: полное руководство'
    url: https://css-tricks.com/centering-css-complete-guide/
- - name: 'Краш-тест вёрстки'
+ - text: 'Краш-тест вёрстки'
    url: https://isqua.ru/blog/2016/06/19/crash-test-viorstki/
- - name: 'Контент по центру, фон по ширине'
+ - text: 'Контент по центру, фон по ширине'
    url: https://isqua.ru/blog/2016/06/23/content-po-sentru-fon-po-shirinie/
 
 ---

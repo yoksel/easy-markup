@@ -3,18 +3,18 @@ title: Первые шаги
 order: 1
 
 links:
-- name: 'Cтруктура документа'
+- text: 'Cтруктура документа'
   url: '#structure'
-- name: 'Как правильно выбрать тег?'
+- text: 'Как правильно выбрать тег?'
   url: '#tags'
-- name: 'Как выбрать класс?'
+- text: 'Как выбрать класс?'
   url: '#class-names'
-- name: 'Чистый код'
+- text: 'Чистый код'
   url: '#clear-code'
 
 additional_links:
 - url: 'https://youtu.be/atXxkKjPbN8'
-  name: 'Зачем нужны заголовки — HTML Шорты'
+  text: 'Зачем нужны заголовки — HTML Шорты'
 ---
 
 <div class="intro">
