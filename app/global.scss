@@ -57,38 +57,11 @@ H5 {
   margin: 0.5em 0;
 }
 
-H1 {
-  font-size: 2rem;
-  line-height: 1.4;
-
-  @media (min-width: 800px) {
-    font-size: 3.5rem;
-    line-height: 1.5;
-  }
-
-  A,
-  A:visited {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  A:hover {
-    text-decoration: underline;
-  }
-}
-
 H2 {
   font-size: 1.8rem;
 
   @media (min-width: 800px) {
     font-size: 2.5rem;
-  }
-}
-.post__title {
-  margin-top: 0;
-
-  .page--index & {
-    display: none;
   }
 }
 
@@ -238,30 +211,6 @@ PRE {
 
 .tip {
   font-style: italic;
-}
-
-/* Relative Project Link
---------------------------------------------- */
-
-.related-project {
-  display: block;
-  max-width: 350px;
-  margin-top: 3rem;
-  padding: 1rem;
-  border: 3px solid #eee;
-  text-align: center;
-}
-.related-project__text {
-  position: relative;
-  display: inline-block;
-  margin-left: 1.5em;
-
-  &::before {
-    content: "\1F4D6";
-    position: absolute;
-    left: -1.5em;
-    line-height: 1.6;
-  }
 }
 
 /* Attention

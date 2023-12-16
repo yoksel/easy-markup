@@ -3,3 +3,25 @@
   padding-bottom: 1.5rem;
   border-bottom: 3px solid #eee;
 }
+
+.siteHeader__title {
+  margin: 0.5em 0;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: bold;
+
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  A,
+  A:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  A:hover {
+    text-decoration: underline;
+  }
+}
