@@ -1,14 +1,10 @@
-type PostType = {
-  slug: string;
-  title: string;
-  date: string;
-  coverImage: string;
-  // author: Author
-  excerpt: string;
-  ogImage: {
-    url: string;
-  };
-  content: string;
+interface Post {
+  slug?: string;
+  title?: string;
+  content?: string;
+  order?: number;
+  links?: PageUrl[];
+  additional_links?: PageUrl[];
 };
 
 interface PageUrl {

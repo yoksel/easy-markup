@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import styles from './asideNav.module.scss';
 
-const AsideNav = ({ title, links }) => {
+interface AsideNavProps {
+  title: string;
+  links: PageUrl[];
+}
+
+const AsideNav = ({ title, links }: AsideNavProps) => {
   if (!links?.length) return null;
 
   return (
@@ -14,7 +19,7 @@ const AsideNav = ({ title, links }) => {
               className={styles.asideNav__item}
               key={index}
             >
-              <Link href={item.url}>{item.name}</Link>
+              <Link href={item.url}>{item.text}</Link>
             </li>
           );
         })}

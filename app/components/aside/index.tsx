@@ -5,24 +5,24 @@ import AsideNav from '../asideNav';
 
 const projects = [
   {
-    name: 'Простые правила разметки',
+    text: 'Простые правила разметки',
     url: '/',
   },
   {
-    name: 'Простой CSS',
+    text: 'Простой CSS',
     url: 'https://yoksel.github.io/easy-css/',
   },
   {
-    name: 'HTML & CSS: как не надо',
+    text: 'HTML & CSS: как не надо',
     url: 'https://yoksel.github.io/bad-practices/',
   },
 ];
 
 const Aside = ({ className, slug }: { className: string; slug: string }) => {
-  const { links, additional_links } = getPostBySlug(slug, [
-    'links',
-    'additional_links',
-  ]);
+  const { links, additional_links } = getPostBySlug({
+    slug,
+    fields: ['links', 'additional_links'],
+  });
 
   return (
     <aside className={classNames(styles.aside, className)}>

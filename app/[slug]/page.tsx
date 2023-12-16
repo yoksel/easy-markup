@@ -14,22 +14,19 @@ import Layout from '../components/layout';
 // import markdownToHtml from '../../lib/markdownToHtml'
 // import type PostType from '../../interfaces/post'
 
-type Props = {
-  post: PostType;
-  morePosts: PostType[];
-  preview?: boolean;
-};
-
 export default async function Post({ params }: any) {
   // const router = useRouter()
   // const { post, morePosts, preview } = props;
   // const title = `${post?.title} | Next.js Blog Example with ...`
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'slug',
-    'content',
-    'links',
-  ]);
+  const {slug} = params;
+  const post = getPostBySlug({
+    slug,
+    fields: [
+      'title',
+      'slug',
+      'content',
+      'links',
+    ]});
   const content = await markdownToHtml(post.content || '');
 
   return (

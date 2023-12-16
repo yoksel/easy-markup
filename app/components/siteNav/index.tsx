@@ -4,22 +4,17 @@ import Socials from '../socials';
 import styles from './siteNav.module.scss';
 import classNames from 'classNames';
 
-interface PageUrl {
-  url: string;
-  name: string;
-}
-
-const getPageUrls = (allPosts: PostType[]): PageUrl[] => {
+const getPageUrls = (allPosts: Post[]): PageUrl[] => {
   return allPosts.map((item) => {
     return {
-      name: item.title,
+      text: item.title,
       url: item.slug,
     };
   });
 };
 
 const SiteNav = ({ slug }: { slug: string }) => {
-  const allPosts: any = getAllPosts(['title', 'slug', 'order']);
+  const allPosts = getAllPosts(['title', 'slug', 'order']);
   const pageUrls = getPageUrls(allPosts);
 
   return (
@@ -36,7 +31,7 @@ const SiteNav = ({ slug }: { slug: string }) => {
               )}
               key={index}
             >
-              <Link href={url}>{item.name}</Link>
+              <Link href={url}>{item.text}</Link>
             </li>
           );
         })}

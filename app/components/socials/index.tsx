@@ -2,7 +2,12 @@ import { GithubIcon, TwitterIcon } from '../icons';
 import styles from './socials.module.scss';
 import classNames from 'classNames';
 
-const items = [
+interface SocialUrl extends PageUrl {
+  type: 'github' | 'twitter';
+  icon: React.ReactNode
+}
+
+const items: SocialUrl[] = [
   {
     url: 'https://github.com/yoksel/easy-markup/',
     text: 'Github',

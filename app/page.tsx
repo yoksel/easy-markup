@@ -2,9 +2,12 @@ import Layout from './components/layout';
 import { getPostBySlug } from './utils/api';
 import markdownToHtml from './utils/markdownToHtml';
 
-export default async function App() {
-  const post = getPostBySlug('index', ['title', 'slug', 'content', 'links']);
-  const content = await markdownToHtml(post.content || '');
+export default function App() {
+  const post = getPostBySlug({
+    slug: 'index',
+    fields: ['title', 'slug', 'content', 'links']
+  });
+  const content = markdownToHtml(post.content || '');
 
   return (
     <Layout slug='index'>

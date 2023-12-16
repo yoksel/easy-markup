@@ -6,43 +6,48 @@ import matter from 'gray-matter';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
-export function getPostSlugs() {
+export function getPostSlugs(): string[] {
   return fs.readdirSync(postsDirectory);
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+type Fields = (keyof Post)[];
+
+interface GetPostBySlugArgs {
+  slug: string;
+  fields: Fields;
+}
+
+export function getPostBySlug(args: GetPostBySlugArgs): Post {
+  const { slug, fields = [] } = args;
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
+  const dataTyped: Post = data;
 
-  type Items = {
-    [key: string]: string | number;
-  };
-
-  const items: Items = {};
+  const filteredFields: { [key: string]: unknown } = {};
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
-      items[field] = realSlug;
+      filteredFields[field] = realSlug;
     }
     if (field === 'content') {
-      items[field] = content;
+      filteredFields[field] = content;
     }
 
-    if (typeof data[field] !== 'undefined') {
-      items[field] = data[field];
+    if (data[field] !== undefined) {
+      filteredFields[field] = dataTyped[field];
     }
   });
 
-  return items;
+  return filteredFields;
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts(fields: Fields = []) {
   const slugs = getPostSlugs();
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug({ slug, fields }))
     // sort posts by order in ascending order
     .sort((post1, post2) => post1.order - post2.order);
   return posts;
