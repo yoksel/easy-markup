@@ -1,6 +1,6 @@
 ---
 title: Введение
-id: index
+order: 0
 
 links:
  - name: 'Используйте HTML-тэги по смыслу'

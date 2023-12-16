@@ -20,6 +20,7 @@ const SiteNav = ({slug}: {slug: string}) => {
   const allPosts: any = getAllPosts([
     'title',
     'slug',
+    'order'
   ]);
   const pageUrls = getPageUrls(allPosts);
 

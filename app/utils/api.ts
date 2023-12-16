@@ -1,3 +1,5 @@
+// https://github.com/vercel/next.js/blob/canary/examples/blog-starter/lib/api.ts
+
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
@@ -15,7 +17,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const { data, content } = matter(fileContents)
 
   type Items = {
-    [key: string]: string
+    [key: string]: string | number;
   }
 
   const items: Items = {}
@@ -41,7 +43,7 @@ export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs()
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+    // sort posts by order in ascending order
+    .sort((post1, post2) => post1.order - post2.order)
   return posts
 }

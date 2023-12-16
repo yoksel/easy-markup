@@ -1,5 +1,6 @@
 ---
 title: Доступность
+order: 7
 
 links:
  - url: '#accessibility-important'

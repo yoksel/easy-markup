@@ -8,8 +8,8 @@ const AsideNav = ({title, links}) => {
     <nav className={styles.asideNav}>
       <div className={styles.asideNav__title}>{title}</div>
       <ol className={styles.asideNav__list}>
-        {links.map(item => {
-          return <li className={styles.asideNav__item}>
+        {links.map((item, index) => {
+          return <li className={styles.asideNav__item} key={index}>
             <Link href={item.url}>{item.name}</Link>
           </li>
         })}

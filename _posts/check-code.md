@@ -1,5 +1,6 @@
 ---
 title: Тестируем всё
+order: 5
 
 links:
 - name: 'Проверить HTML'
