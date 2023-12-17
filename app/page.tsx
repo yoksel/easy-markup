@@ -3,6 +3,7 @@ import { getPostBySlug } from './utils/api';
 import markdownToHtml from './utils/markdownToHtml';
 import type { Metadata } from 'next';
 import config from '../config.json';
+import Article from './components/article';
 
 export function generateMetadata(): Metadata {
   return {
@@ -20,7 +21,7 @@ export default function App() {
 
   return (
     <Layout slug='index'>
-      <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      <Article content={content} />
     </Layout>
   );
 }

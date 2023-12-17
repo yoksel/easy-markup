@@ -39,7 +39,7 @@ export default async function Post({ params }: any) {
     slug,
     fields: ['title', 'slug', 'content', 'links'],
   });
-  const content = await markdownToHtml(post.content || '');
+  const content = markdownToHtml(post.content || '');
 
   return (
     <Layout slug={params.slug}>

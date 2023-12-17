@@ -7,6 +7,29 @@
   }
 }
 
+.article H2,
+.article H3,
+.article H4,
+.article H5 {
+  A {
+    color: inherit;
+    text-decoration: none;
+
+    &::after {
+      content: '#';
+      // otherwise screen reader reads #
+      visibility: hidden;
+      margin-left: 0.2em;
+      color: var(--color-anchor-text);
+    }
+
+    &:hover::after {
+      visibility: visible;
+      color: var(--color-link);
+    }
+  }
+}
+
 .article H2 {
   font-size: 1.5rem;
 

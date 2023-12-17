@@ -31,18 +31,6 @@ A {
   }
 }
 
-.post__anchor {
-  &:link,
-  &:visited {
-    text-decoration: none;
-    color: var(--color-anchor-text);
-  }
-
-  &:hover {
-    color: var(--color-link);
-  }
-}
-
 /* Headers
 --------------------------------------------- */
 
