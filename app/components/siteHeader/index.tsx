@@ -8,10 +8,16 @@ const SiteHeader = ({ slug }: { slug: string }) => {
   const Element = isHomepage ? 'h1' : 'div';
 
   return (
-    <header className={styles.siteHeader}>
+    <header
+      className={styles.siteHeader}
+      aria-label='Шапка сайта'
+    >
       <Element className={styles.siteHeader__title}>{titleContent}</Element>
 
-      <SiteNav slug={slug} />
+      <SiteNav
+        slug={slug}
+        ariaLabel='Верхняя навигация по сайту'
+      />
     </header>
   );
 };

@@ -4,6 +4,11 @@ import Socials from '../socials';
 import styles from './siteNav.module.scss';
 import classNames from 'classNames';
 
+interface SiteNavProps {
+  slug: string;
+  ariaLabel: string;
+}
+
 const getPageUrls = (allPosts: Post[]): PageUrl[] => {
   return allPosts.map((item) => {
     return {
@@ -13,12 +18,15 @@ const getPageUrls = (allPosts: Post[]): PageUrl[] => {
   });
 };
 
-const SiteNav = ({ slug }: { slug: string }) => {
+const SiteNav = ({ slug, ariaLabel }: SiteNavProps) => {
   const allPosts = getAllPosts(['title', 'slug', 'order']);
   const pageUrls = getPageUrls(allPosts);
 
   return (
-    <nav className={styles.siteNav}>
+    <nav
+      className={styles.siteNav}
+      aria-label={ariaLabel}
+    >
       <ul className={styles.siteNav__list}>
         {pageUrls.map((item, index) => {
           const url = item.url === 'index' ? '/' : item.url;

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useId } from 'react';
 import styles from './asideNav.module.scss';
 
 interface AsideNavProps {
@@ -7,11 +8,22 @@ interface AsideNavProps {
 }
 
 const AsideNav = ({ title, links }: AsideNavProps) => {
+  // id for every aside nav should be unique
+  const id = useId();
+
   if (!links?.length) return null;
 
   return (
-    <nav className={styles.asideNav}>
-      <div className={styles.asideNav__title}>{title}</div>
+    <nav
+      className={styles.asideNav}
+      aria-labelledby={id}
+    >
+      <h2
+        id={id}
+        className={styles.asideNav__title}
+      >
+        {title}
+      </h2>
       <ol className={styles.asideNav__list}>
         {links.map((item, index) => {
           return (
