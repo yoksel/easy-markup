@@ -28,7 +28,7 @@ links:
 
 <ol>
     <li>
-        <h2 id="check-html">Проверить HTML <a class="post__anchor" href="#check-html">#</a></h2>
+        <h2 id="check-html">Проверить HTML</h2>
 
         <p>Используйте <a href="https://validator.w3.org/nu/#textarea">валидатор разметки</a>.</p>
 
@@ -38,7 +38,7 @@ links:
     </li>
 
     <li>
-      <h2 id="check-bem">Проверить БЭМ-разметку <a class="post__anchor" href="#check-bem">#</a></h2>
+      <h2 id="check-bem">Проверить БЭМ-разметку</h2>
 
       <p>Используйте <a href="http://yoksel.github.io/html-tree/">Html tree</a>.</p>
 
@@ -46,7 +46,7 @@ links:
     </li>
 
     <li>
-      <h2 id="check-css">Проверить CSS <a class="post__anchor" href="#check-css">#</a></h2>
+      <h2 id="check-css">Проверить CSS</h2>
 
       <h3>Валидация</h3>
 
@@ -85,7 +85,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h2 id="devices">Проверить страницу на разных размерах экрана <a class="post__anchor" href="#devices">#</a></h2>
+      <h2 id="devices">Проверить страницу на разных размерах экрана</h2>
 
       <p>Используйте эмулятор мобильных устройств, который есть в Хроме. Кнопка включения находится в панели разработчиков, вторая иконка в верхнем ряду:</p>
 
@@ -109,7 +109,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h2 id="check-maket">Проверить страницу на соответствие макету <a class="post__anchor" href="#check-maket">#</a></h2>
+      <h2 id="check-maket">Проверить страницу на соответствие макету</h2>
 
       <p>Используйте <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a> или расширение для Хрома <a href="https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">PerfectPixel</a>.</p>
 
@@ -117,7 +117,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h2 id="check-fonts">Проверить шрифты <a class="post__anchor" href="#check-fonts">#</a></h2>
+      <h2 id="check-fonts">Проверить шрифты</h2>
 
       <p>Панель разработчика &rarr; Network &rarr; Fonts.</p>
 
@@ -125,7 +125,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h2 id="check-images">Проверить изображения <a class="post__anchor" href="#check-images">#</a></h2>
+      <h2 id="check-images">Проверить изображения</h2>
 
       <p>Панель разработчика &rarr; Network &rarr; Img.</p>
 
@@ -145,7 +145,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h2 id="check-overflow">Проверить страницу на переполнение контентом <a class="post__anchor" href="#check-overflow">#</a></h2>
+      <h2 id="check-overflow">Проверить страницу на переполнение контентом</h2>
 
       <p>Введите в консоль браузера команду:</p>
 

@@ -31,7 +31,7 @@ links:
 
 <ol>
   <li>
-    <h2 id="simple-list">Простой список <a class="post__anchor" href="#simple-list">#</a></h2>
+    <h2 id="simple-list">Простой список</h2>
 
 ```html
 <ul class="list">
@@ -43,7 +43,7 @@ links:
   </li>
 
   <li>
-    <h2 id="userpic">Картинка пользователя (юзерпик) <a class="post__anchor" href="#userpic">#</a></h2>
+    <h2 id="userpic">Картинка пользователя (юзерпик)</h2>
 
 ```html
 <div class="user">
@@ -54,7 +54,7 @@ links:
   </li>
 
   <li>
-    <h2 id="gallery">Галерея <a class="post__anchor" href="#gallery">#</a></h2>
+    <h2 id="gallery">Галерея</h2>
 
 ```html
 <div class="gallery gallery--slider">
@@ -71,7 +71,7 @@ links:
   </li>
 
   <li>
-    <h2 id="nav-1">Навигация (простой вариант) <a class="post__anchor" href="#nav-1">#</a></h2>
+    <h2 id="nav-1">Навигация (простой вариант)</h2>
 
 ```html
 <nav class="nav">
@@ -85,7 +85,7 @@ links:
   </li>
 
   <li>
-    <h2 id="nav-2">Навигация (сложный вариант) <a class="post__anchor" href="#nav-2">#</a></h2>
+    <h2 id="nav-2">Навигация (сложный вариант)</h2>
 
 ```html
 <nav class="nav">
@@ -108,7 +108,7 @@ links:
   </li>
 
   <li>
-    <h2 id="widget">Виджет в боковой колонке <a class="post__anchor" href="#widget">#</a></h2>
+    <h2 id="widget">Виджет в боковой колонке</h2>
 
 ```html
 <div class="widget">
@@ -126,7 +126,7 @@ links:
   </li>
 
   <li>
-    <h2 id="news">Блок новостей <a class="post__anchor" href="#news">#</a></h2>
+    <h2 id="news">Блок новостей</h2>
 
 ```html
 <div class="news">
@@ -163,7 +163,7 @@ links:
   </li>
 
   <li>
-    <h2 id="simple-article">Статья или пост в блоге (простой вариант) <a class="post__anchor" href="#simple-article">#</a></h2>
+    <h2 id="simple-article">Статья или пост в блоге (простой вариант)</h2>
 
 ```html
 <article class="article">
@@ -194,7 +194,7 @@ links:
   </li>
 
   <li>
-    <h2 id="article">Статья или пост в блоге (сложный вариант) <a class="post__anchor" href="#article">#</a></h2>
+    <h2 id="article">Статья или пост в блоге (сложный вариант)</h2>
 
 ```html
 <article class="entry">
@@ -256,7 +256,7 @@ links:
   </li>
 
   <li>
-    <h2 id="page-markup">Разметка страницы <a class="post__anchor" href="#page-markup">#</a></h2>
+    <h2 id="page-markup">Разметка страницы</h2>
 
 ```html
 <!-- Шапка сайта -->
