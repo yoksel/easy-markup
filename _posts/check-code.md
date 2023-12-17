@@ -28,7 +28,7 @@ links:
 
 <ol>
     <li>
-        <h3 id="check-html">Проверить HTML <a class="post__anchor" href="#check-html">#</a></h3>
+        <h2 id="check-html">Проверить HTML <a class="post__anchor" href="#check-html">#</a></h2>
 
         <p>Используйте <a href="https://validator.w3.org/nu/#textarea">валидатор разметки</a>.</p>
 
@@ -38,7 +38,7 @@ links:
     </li>
 
     <li>
-      <h3 id="check-bem">Проверить БЭМ-разметку <a class="post__anchor" href="#check-bem">#</a></h3>
+      <h2 id="check-bem">Проверить БЭМ-разметку <a class="post__anchor" href="#check-bem">#</a></h2>
 
       <p>Используйте <a href="http://yoksel.github.io/html-tree/">Html tree</a>.</p>
 
@@ -46,13 +46,13 @@ links:
     </li>
 
     <li>
-      <h3 id="check-css">Проверить CSS <a class="post__anchor" href="#check-css">#</a></h3>
+      <h2 id="check-css">Проверить CSS <a class="post__anchor" href="#check-css">#</a></h2>
 
-      <h4>Валидация</h4>
+      <h3>Валидация</h3>
 
       <p>Используйте <a href="https://csstree.github.io/docs/validator.html">CSS syntax validator</a>.</p>
 
-      <h4>Форматирование</h4>
+      <h3>Форматирование</h3>
 
       <p>Используйте <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">The stylelint CLI</a>.</p>
 
@@ -85,7 +85,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="devices">Проверить страницу на разных размерах экрана <a class="post__anchor" href="#devices">#</a></h3>
+      <h2 id="devices">Проверить страницу на разных размерах экрана <a class="post__anchor" href="#devices">#</a></h2>
 
       <p>Используйте эмулятор мобильных устройств, который есть в Хроме. Кнопка включения находится в панели разработчиков, вторая иконка в верхнем ряду:</p>
 
@@ -109,13 +109,13 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="check-maket">Проверить страницу на соответствие макету <a class="post__anchor" href="#check-maket">#</a></h3>
+      <h2 id="check-maket">Проверить страницу на соответствие макету <a class="post__anchor" href="#check-maket">#</a></h2>
 
       <p>Используйте <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a>.</p>
     </li>
 
     <li>
-      <h3 id="check-fonts">Проверить шрифты <a class="post__anchor" href="#check-fonts">#</a></h3>
+      <h2 id="check-fonts">Проверить шрифты <a class="post__anchor" href="#check-fonts">#</a></h2>
 
       <p>Панель разработчика &rarr; Network &rarr; Fonts.</p>
 
@@ -123,7 +123,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="check-images">Проверить изображения <a class="post__anchor" href="#check-images">#</a></h3>
+      <h2 id="check-images">Проверить изображения <a class="post__anchor" href="#check-images">#</a></h2>
 
       <p>Панель разработчика &rarr; Network &rarr; Img.</p>
 
@@ -143,7 +143,7 @@ stylelint "less/**/*.less"
     </li>
 
     <li>
-      <h3 id="check-overflow">Проверить страницу на переполнение контентом <a class="post__anchor" href="#check-overflow">#</a></h3>
+      <h2 id="check-overflow">Проверить страницу на переполнение контентом <a class="post__anchor" href="#check-overflow">#</a></h2>
 
       <p>Введите в консоль браузера команду:</p>
 

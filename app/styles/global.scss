@@ -162,7 +162,7 @@ OL OL {
 OL > LI {
   counter-increment: list-counter;
 }
-OL > LI > H3:before {
+OL > LI > H2:before {
   content: counter(list-counter) ". ";
 }
 

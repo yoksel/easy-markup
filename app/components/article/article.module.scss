@@ -6,3 +6,32 @@
     font-size: 2.5rem;
   }
 }
+
+.article H2 {
+  font-size: 1.5rem;
+
+  @media (min-width: 800px) {
+    font-size: 2rem;
+  }
+
+  SUP {
+    font-size: 0.7rem;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.article H3 {
+  font-size: 1.2rem;
+
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+
+.article H4 {
+  font-size: 1.25rem;
+}
