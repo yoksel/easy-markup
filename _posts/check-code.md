@@ -111,7 +111,9 @@ stylelint "less/**/*.less"
     <li>
       <h2 id="check-maket">Проверить страницу на соответствие макету <a class="post__anchor" href="#check-maket">#</a></h2>
 
-      <p>Используйте <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a>.</p>
+      <p>Используйте <a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a> или расширение для Хрома <a href="https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">PerfectPixel</a>.</p>
+
+      <p><a href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a> больше подходит для работы над проектом с адаптивной вёрсткой (макеты будут меняться сами при изменении размеров окна), <a href="https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">PerfectPixel</a> — для быстрой проверки страниц.</p>
     </li>
 
     <li>
