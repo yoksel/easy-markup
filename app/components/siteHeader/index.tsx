@@ -12,7 +12,15 @@ const SiteHeader = ({ slug }: { slug: string }) => {
       className={styles.siteHeader}
       aria-label='Шапка сайта'
     >
-      <Element className={styles.siteHeader__title}>{titleContent}</Element>
+      <div className={styles.siteHeader__titleWrapper}>
+        <Element className={styles.siteHeader__title}>{titleContent}</Element>
+        <a
+          className={styles.siteHeader__skipToMainLink}
+          href='#main'
+        >
+          Перейти к основному содержимому
+        </a>
+      </div>
 
       <SiteNav
         slug={slug}

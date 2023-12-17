@@ -18,6 +18,12 @@ const getPageUrls = (allPosts: Post[]): PageUrl[] => {
   });
 };
 
+const getUrl = (url: string) => {
+  const isHomePageLink = url === 'index';
+
+  return isHomePageLink ? '/' : url;
+};
+
 const SiteNav = ({ slug, ariaLabel }: SiteNavProps) => {
   const allPosts = getAllPosts(['title', 'slug', 'order']);
   const pageUrls = getPageUrls(allPosts);
@@ -29,17 +35,23 @@ const SiteNav = ({ slug, ariaLabel }: SiteNavProps) => {
     >
       <ul className={styles.siteNav__list}>
         {pageUrls.map((item, index) => {
-          const url = item.url === 'index' ? '/' : item.url;
+          const isCurrent = slug === item.url;
+          const href = getUrl(item.url);
 
           return (
             <li
               className={classNames(
                 styles.siteNav__item,
-                slug === item.url && styles.siteNav__itemCurrent,
+                isCurrent && styles.siteNav__itemCurrent,
               )}
               key={index}
             >
-              <Link href={url}>{item.text}</Link>
+              <Link
+                href={href}
+                aria-current={isCurrent ? 'page' : 'false'}
+              >
+                {item.text}
+              </Link>
             </li>
           );
         })}

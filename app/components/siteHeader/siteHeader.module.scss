@@ -4,6 +4,10 @@
   border-bottom: 3px solid var(--color-border);
 }
 
+.siteHeader__titleWrapper {
+  position: relative;
+}
+
 .siteHeader__title {
   margin: 0.5em 0;
   font-size: 2rem;
@@ -23,5 +27,16 @@
 
   A:hover {
     text-decoration: underline;
+  }
+}
+
+.siteHeader__skipToMainLink {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  background-color: var(--color-background);
+
+  &:focus {
+    opacity: 1;
   }
 }

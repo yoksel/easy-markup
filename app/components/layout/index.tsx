@@ -13,7 +13,12 @@ const Layout = ({ children, slug }: LayoutProps) => {
     <div className={styles.wrapper}>
       <SiteHeader slug={slug} />
       <div className={styles.siteContent}>
-        <main className={styles.main}>{children}</main>
+        <main
+          id='main'
+          className={styles.main}
+        >
+          {children}
+        </main>
         <Aside
           slug={slug}
           className={styles.aside}

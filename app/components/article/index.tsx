@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import styles from './article.module.scss';
 
 interface ArticleProps {
@@ -9,14 +9,22 @@ interface ArticleProps {
 }
 
 const Article = ({ title, content }: ArticleProps) => {
+  const heading = useRef(null);
   useEffect(() => {
     // https://blog.codepen.io/documentation/embedded-pens/#delayed-embeds
     window.__CPEmbed?.();
+    heading?.current?.focus();
   }, []);
 
   return (
     <article className={styles.article}>
-      <h1 className={styles.article__title}>{title}</h1>
+      <h1
+        ref={heading}
+        className={styles.article__title}
+        tabIndex={-1}
+      >
+        {title}
+      </h1>
       <div dangerouslySetInnerHTML={{ __html: content }}></div>
     </article>
   );
