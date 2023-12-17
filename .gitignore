@@ -1,7 +1,6 @@
 _site
 npm-debug.log
-.sass-cache
-.jekyll-metadata
 .DS_Store
 .next
 node_modules
+tsconfig.tsbuildinfo
