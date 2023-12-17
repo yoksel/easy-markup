@@ -1,0 +1,36 @@
+:root {
+  --color-text: #222;
+  --color-link: hsl(214, 76%, 53%);
+  --color-link-visited: hsl(214, 76%, 38%);
+  --color-link-hover: hsl(214, 76%, 67%);
+  --color-link-twitter: hsl(203, 89%, 53%);
+
+  --color-anchor-text: #ddd;
+
+  --color-background: #fff;
+  --color-border: #eee;
+
+  --color-image-border: #ddd;
+
+  --color-code-border: #ddd;
+  --color-code-background: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #fff;
+    --color-link: hsl(214, 90%, 68%);
+    --color-link-visited: hsl(214, 90%, 78%);
+    --color-link-hover: hsl(214, 90%, 90%);
+
+    --color-anchor-text: #555;
+
+    --color-background: #222;
+    --color-border: #333;
+
+    --color-image-border: #555;
+
+    --color-code-border: #555;
+    --color-code-background: #333;
+  }
+}

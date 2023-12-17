@@ -1,5 +1,5 @@
-import './global.scss';
-import './prism.scss';
+import './styles/global.scss';
+import './styles/prism.scss';
 
 // <title>{{ site.title }}{% if page.title %} &bull; {{ page.title }}{% endif %}</title>
 // <meta name="description" content="">

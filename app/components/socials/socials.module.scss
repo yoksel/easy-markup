@@ -11,23 +11,19 @@
 }
 
 .socials__icon {
-  transition: all 0.25s;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 .socials__icon--github {
-  color: #000;
-
-  &:hover {
-    color: lighten(#000, 50%);
-  }
+  color: var(--color-text);
 }
 
 .socials__icon--twitter {
-  color: #1da1f2;
-
-  &:hover {
-    color: lighten(#1da1f2, 20%);
-  }
+  color: var(--color-link-twitter);
 }
 
 .socials__icon svg {
