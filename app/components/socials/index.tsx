@@ -1,10 +1,10 @@
 import { GithubIcon, TwitterIcon } from '../icons';
 import styles from './socials.module.scss';
-import classNames from 'classNames';
+import classnames from 'classnames';
 
 interface SocialUrl extends PageUrl {
   type: 'github' | 'twitter';
-  icon: React.ReactNode
+  icon: React.ReactNode;
 }
 
 const items: SocialUrl[] = [
@@ -35,7 +35,7 @@ const Socials = () => (
           className={styles.socials__link}
         >
           <span
-            className={classNames(
+            className={classnames(
               styles.socials__icon,
               styles[`socials__icon--${item.type}`],
             )}

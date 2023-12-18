@@ -1,4 +1,4 @@
-import classNames from 'classNames';
+import classnames from 'classnames';
 import styles from './aside.module.scss';
 import { getPostBySlug } from '../../utils/api';
 import AsideNav from '../asideNav';
@@ -25,7 +25,7 @@ const Aside = ({ className, slug }: { className: string; slug: string }) => {
   });
 
   return (
-    <aside className={classNames(styles.aside, className)}>
+    <aside className={classnames(styles.aside, className)}>
       <AsideNav
         title='На этой странице:'
         links={links}

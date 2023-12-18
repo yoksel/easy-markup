@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getAllPosts } from '../../utils/api';
 import Socials from '../socials';
 import styles from './siteNav.module.scss';
-import classNames from 'classNames';
+import classnames from 'classnames';
 
 interface SiteNavProps {
   slug: string;
@@ -40,7 +40,7 @@ const SiteNav = ({ slug, ariaLabel }: SiteNavProps) => {
 
           return (
             <li
-              className={classNames(
+              className={classnames(
                 styles.siteNav__item,
                 isCurrent && styles.siteNav__itemCurrent,
               )}
