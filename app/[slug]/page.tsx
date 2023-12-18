@@ -28,7 +28,7 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default async function Post({ params }: any) {
+export default function Post({ params }: Props) {
   const { slug } = params;
 
   if (slug === 'favicon.ico') {
