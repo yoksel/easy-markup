@@ -17,13 +17,13 @@
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "classnames": "^2.3.2"
   },
   "devDependencies": {
     "@types/node": "20.10.4",
     "@types/prismjs": "^1.26.3",
     "@types/react": "18.2.45",
-    "classnames": "^2.3.2",
     "prettier": "^3.1.1",
     "prismjs": "^1.29.0",
     "typescript": "5.3.3"
