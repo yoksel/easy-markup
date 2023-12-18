@@ -1,0 +1,23 @@
+.asideNav {
+  @media (min-width: 1000px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.asideNav__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.asideNav__list {
+  list-style-type: decimal;
+  font-size: 0.9em;
+}
+
+.asideNav__itemCurrent {
+  A {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+}

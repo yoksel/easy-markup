@@ -1,0 +1,42 @@
+.socials {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.socials__icon {
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.socials__icon--github {
+  color: var(--color-text);
+}
+
+.socials__icon--twitter {
+  color: var(--color-link-twitter);
+}
+
+.socials__icon svg {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+
+  @media (min-width: 800px) {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.socials__icon path {
+  fill: currentColor;
+}

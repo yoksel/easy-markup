@@ -3,8 +3,8 @@
     "at-rule-empty-line-before": [
       "always",
       {
-        except: ["blockless-group", "first-nested"],
-        message: "Ожидается пустая строка перед @-правилом"
+        "except": ["blockless-group", "first-nested"],
+        "message": "Ожидается пустая строка перед @-правилом"
       }
     ],
     "at-rule-semicolon-newline-after": [
@@ -16,19 +16,19 @@
     "block-no-empty": [
       true,
       {
-        message: "Пустых блоков быть не должно"
+        "message": "Пустых блоков быть не должно"
       }
     ],
     "declaration-colon-space-after": [
       "always",
       {
-        message: "Ожидается пробел после двоеточия"
+        "message": "Ожидается пробел после двоеточия"
       }
     ],
     "declaration-colon-space-before": [
       "never",
       {
-        message: "Перед двоеточием не нужен пробел"
+        "message": "Перед двоеточием не нужен пробел"
       }
     ],
     "declaration-block-no-duplicate-properties": [
@@ -52,7 +52,7 @@
     "declaration-block-semicolon-newline-after": [
       "always",
       {
-        message: "Нужна новая строка после точки с запятой"
+        "message": "Нужна новая строка после точки с запятой"
       }
     ],
     "declaration-block-single-line-max-declarations": [
@@ -70,7 +70,7 @@
     "block-closing-brace-newline-before": [
       "always",
       {
-        message: "Закрывающая скобка должна быть на новой строке"
+        "message": "Закрывающая скобка должна быть на новой строке"
       }
     ],
     "block-no-single-line": [
@@ -82,7 +82,7 @@
     "block-opening-brace-space-before": [
       "always",
       {
-        message: "Нужен пробел перед открывающей фигурной скобкой"
+        "message": "Нужен пробел перед открывающей фигурной скобкой"
       }
     ],
     "block-opening-brace-newline-after": [
@@ -94,25 +94,25 @@
     "declaration-no-important": [
       true,
       {
-        message: "Не следует использовать !important"
+        "message": "Не следует использовать !important"
       }
     ],
     "indentation": [
       2,
       {
-        message: "Отступы должны быть кратны 2-м пробелам"
+        "message": "Отступы должны быть кратны 2-м пробелам"
       }
     ],
     "length-zero-no-unit": [
       true,
       {
-        message: "Нулевым значениям можно не указывать единицы измерения"
+        "message": "Нулевым значениям можно не указывать единицы измерения"
       }
     ],
     "media-feature-colon-space-after": [
       "always",
       {
-        message: "Ожидается пробел после двоеточия в медиавыражении"
+        "message": "Ожидается пробел после двоеточия в медиавыражении"
       }
     ],
     "no-duplicate-selectors": [
@@ -124,32 +124,32 @@
     "number-leading-zero": [
       "always",
       {
-        message: "В числовом значении перед точкой ожидается ноль"
+        "message": "В числовом значении перед точкой ожидается ноль"
       }
     ],
     "number-max-precision": [
       3,
       {
-        message: "В значениях достаточно 3-х знаков после запятой"
+        "message": "В значениях достаточно 3-х знаков после запятой"
       }
     ],
     "rule-nested-empty-line-before": [
-        "always",
-        {
-          except: ["first-nested"],
-          message: "Перед вложенным правилом ожидается пустая строка"
-        }
-      ],
+      "always",
+      {
+        "except": ["first-nested"],
+        "message": "Перед вложенным правилом ожидается пустая строка"
+      }
+    ],
     "rule-non-nested-empty-line-before": [
       "always",
       {
-        message: "Ожидается пустая строка перед правилом"
+        "message": "Ожидается пустая строка перед правилом"
       }
     ],
     "selector-pseudo-element-colon-notation": [
       "double",
       {
-        message: "Для псевдоэлементов следует использовать двойное двоеточие"
+        "message": "Для псевдоэлементов следует использовать двойное двоеточие"
       }
     ],
     "selector-no-id": [
@@ -161,13 +161,13 @@
     "selector-list-comma-newline-after": [
       "always",
       {
-        message: "Каждый селектор должен быть на новой строке"
+        "message": "Каждый селектор должен быть на новой строке"
       }
     ],
     "string-quotes": [
       "double",
       {
-        message: "Ожидаются двойные кавычки"
+        "message": "Ожидаются двойные кавычки"
       }
     ],
     "selector-type-no-unknown": [
@@ -187,6 +187,6 @@
       {
         "message": "Некорректные единицы измерения"
       }
-    ],
+    ]
   }
 }

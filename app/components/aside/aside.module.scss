@@ -1,0 +1,24 @@
+.pageNav {
+  @media (min-width: 1000px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.pageNav__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.pageNav__list {
+  font-size: 0.9em;
+}
+OL.pageNav__list {
+  list-style-type: decimal;
+}
+
+.pageNav__itemCurrent {
+  A {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+}
