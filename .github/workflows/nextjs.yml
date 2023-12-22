@@ -85,7 +85,7 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
+      name: nextjs-deploy
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
