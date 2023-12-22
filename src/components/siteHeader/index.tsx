@@ -1,7 +1,8 @@
+import { Post } from '../../types';
 import SiteNav from '../siteNav';
 import styles from './siteHeader.module.scss';
 
-const SiteHeader = ({ slug }: { slug: string }) => {
+const SiteHeader = ({ slug, allPosts }: { slug: string; allPosts: Post[] }) => {
   const titleText = 'Простые правила разметки';
   const isHomepage = slug === 'index';
   const titleContent = isHomepage ? titleText : <a href='/'>{titleText}</a>;
@@ -25,6 +26,7 @@ const SiteHeader = ({ slug }: { slug: string }) => {
       <SiteNav
         slug={slug}
         ariaLabel='Верхняя навигация по сайту'
+        allPosts={allPosts}
       />
     </header>
   );

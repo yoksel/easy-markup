@@ -1,17 +1,22 @@
-import { useEffect } from 'react';
 import Aside from '../aside';
 import SiteFooter from '../siteFooter';
 import SiteHeader from '../siteHeader';
 import styles from './layout.module.scss';
+import { Post } from '../../types';
 
 interface LayoutProps extends React.PropsWithChildren {
   slug: string;
+  post: Post;
+  allPosts: Post[];
 }
 
-const Layout = ({ children, slug }: LayoutProps) => {
+const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
   return (
     <div className={styles.wrapper}>
-      <SiteHeader slug={slug} />
+      <SiteHeader
+        slug={slug}
+        allPosts={allPosts}
+      />
       <div className={styles.siteContent}>
         <main
           id='main'
@@ -22,9 +27,13 @@ const Layout = ({ children, slug }: LayoutProps) => {
         <Aside
           slug={slug}
           className={styles.aside}
+          post={post}
         />
       </div>
-      <SiteFooter slug={slug} />
+      <SiteFooter
+        slug={slug}
+        allPosts={allPosts}
+      />
     </div>
   );
 };

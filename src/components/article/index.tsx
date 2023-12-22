@@ -9,10 +9,10 @@ interface ArticleProps {
 }
 
 const Article = ({ title, content }: ArticleProps) => {
-  const heading = useRef(null);
+  const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     // https://blog.codepen.io/documentation/embedded-pens/#delayed-embeds
-    window.__CPEmbed?.();
+    (window as any).__CPEmbed?.();
     heading?.current?.focus();
   }, []);
 

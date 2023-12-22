@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import styles from './aside.module.scss';
-import { getPostBySlug } from '../../utils/api';
 import AsideNav from '../asideNav';
+import { Post } from '../../types';
 
 const projects = [
   {
@@ -18,11 +18,16 @@ const projects = [
   },
 ];
 
-const Aside = ({ className, slug }: { className: string; slug: string }) => {
-  const { links, additional_links } = getPostBySlug({
-    slug,
-    fields: ['links', 'additional_links'],
-  });
+const Aside = ({
+  className,
+  slug,
+  post,
+}: {
+  className: string;
+  slug: string;
+  post: Post;
+}) => {
+  const { links, additional_links } = post;
 
   return (
     <aside className={classnames(styles.aside, className)}>

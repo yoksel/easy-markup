@@ -3,6 +3,7 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import { Post } from '../types';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
@@ -19,10 +20,6 @@ interface GetPostBySlugArgs {
 
 export function getPostBySlug(args: GetPostBySlugArgs): Post {
   const { slug, fields = [] } = args;
-
-  if (slug === 'favicon.ico') {
-    return null;
-  }
 
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
@@ -54,6 +51,12 @@ export function getAllPosts(fields: Fields = []) {
   const posts = slugs
     .map((slug) => getPostBySlug({ slug, fields }))
     // sort posts by order in ascending order
-    .sort((post1, post2) => post1.order - post2.order);
+    .sort((post1, post2) => {
+      if (post1.order && post2.order) {
+        return post1.order - post2.order;
+      }
+
+      return 0;
+    });
   return posts;
 }

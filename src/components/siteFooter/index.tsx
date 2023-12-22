@@ -1,7 +1,8 @@
+import { Post } from '../../types';
 import SiteNav from '../siteNav';
 import styles from './siteFooter.module.scss';
 
-const SiteFooter = ({ slug }: { slug: string }) => {
+const SiteFooter = ({ slug, allPosts }: { slug: string; allPosts: Post[] }) => {
   return (
     <footer
       className={styles.siteFooter}
@@ -10,6 +11,7 @@ const SiteFooter = ({ slug }: { slug: string }) => {
       <SiteNav
         slug={slug}
         ariaLabel='Нижняя навигация по сайту'
+        allPosts={allPosts}
       />
     </footer>
   );

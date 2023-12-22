@@ -1,19 +1,32 @@
 import Link from 'next/link';
-import { getAllPosts } from '../../utils/api';
+// import { getAllPosts } from '../../app/utils/api';
 import Socials from '../socials';
 import styles from './siteNav.module.scss';
 import classnames from 'classnames';
+import { PageUrl, Post } from '../../types';
 
 interface SiteNavProps {
   slug: string;
   ariaLabel: string;
+  allPosts: Post[];
 }
 
+const sortByOrder = (post1: Post, post2: Post) => {
+  if (post1.order !== undefined && post2.order !== undefined) {
+    return post1.order - post2.order;
+  }
+
+  return 0;
+};
+
 const getPageUrls = (allPosts: Post[]): PageUrl[] => {
-  return allPosts.map((item) => {
+  const allPostsFiltered = allPosts.filter(({ title, slug }) => title && slug);
+  allPostsFiltered.sort(sortByOrder);
+
+  return allPostsFiltered.map((item) => {
     return {
-      text: item.title,
-      url: item.slug,
+      text: item.title!,
+      url: item.slug!,
     };
   });
 };
@@ -24,8 +37,7 @@ const getUrl = (url: string) => {
   return isHomePageLink ? '/' : url;
 };
 
-const SiteNav = ({ slug, ariaLabel }: SiteNavProps) => {
-  const allPosts = getAllPosts(['title', 'slug', 'order']);
+const SiteNav = ({ slug, ariaLabel, allPosts }: SiteNavProps) => {
   const pageUrls = getPageUrls(allPosts);
 
   return (

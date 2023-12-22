@@ -1,3 +1,4 @@
+import { PageUrl } from '../../types';
 import { GithubIcon, TwitterIcon } from '../icons';
 import styles from './socials.module.scss';
 import classnames from 'classnames';

@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { useId } from 'react';
 import styles from './asideNav.module.scss';
+import { PageUrl } from '../../types';
 
 interface AsideNavProps {
   title: string;
-  links: PageUrl[];
+  links?: PageUrl[];
 }
 
 const AsideNav = ({ title, links }: AsideNavProps) => {
