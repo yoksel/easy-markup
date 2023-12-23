@@ -14,6 +14,9 @@ const Article = ({ title, content }: ArticleProps) => {
     // https://blog.codepen.io/documentation/embedded-pens/#delayed-embeds
     (window as any).__CPEmbed?.();
     heading?.current?.focus();
+
+    console.log(heading?.current);
+    console.log(window);
   }, []);
 
   return (

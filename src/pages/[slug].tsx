@@ -54,7 +54,10 @@ export default function Page({
       post={post}
       allPosts={allPosts}
     >
-      <Article content={content} />
+      <Article
+        title={post.title}
+        content={content}
+      />
     </Layout>
   );
 }
