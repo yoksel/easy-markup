@@ -8,19 +8,12 @@ interface ArticleProps {
   content: string;
 }
 
-const runStaticJSHack = async () => {
-  const staticJSHack = (await import('../../staticJSHack')).default;
-  staticJSHack?.();
-};
-
 const Article = ({ title, content }: ArticleProps) => {
   const heading = useRef<HTMLHeadingElement>(null);
-  runStaticJSHack();
 
   useEffect(() => {
+    // won't work on static version
     heading?.current?.focus();
-
-    console.log(heading?.current);
   }, []);
 
   return (

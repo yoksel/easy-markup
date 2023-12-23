@@ -168,8 +168,11 @@ BODY > * > * > * {
 
         <p>В действии это выглядит примерно так:</p>
 
-        <p data-height="630" data-theme-id="4974" data-slug-hash="yaXGpa" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yaXGpa/">yaXGpa</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="630" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/yoksel/embed/yaXGpa?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/yoksel/pen/yaXGpa">
+  Untitled</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
         <p>Этот код тоже можно вставить в <code>head</code> или лучше положить его в файл с стилями, но можно сделать ещё удобнее: добавьте в браузер <b>Stylish</b> (плагин для кастомного CSS) и подключите этот код через него — тогда в любой момент вы сможете включить или выключить обводки не покидая страницу.</p>
 

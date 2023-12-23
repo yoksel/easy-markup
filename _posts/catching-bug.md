@@ -35,8 +35,11 @@ links:
 
       <p>Чтобы видеть границы элементов и лучше понимать как они взаимодействуют друг с другом, добавьте им цветные обводки (<code>outline</code>). Результат может выглядеть как-то так:</p>
 
-<p data-height="630" data-theme-id="4974" data-slug-hash="yaXGpa" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yaXGpa/">yaXGpa</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="630" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/yoksel/embed/yaXGpa?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/yoksel/pen/yaXGpa">
+  Untitled</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
       <p>Это позволит лучше представлять себе структуру документа, а ещё так удобно искать причины появления лишних прокруток на странице: может оказаться, что какие-то элементы получились шире, чем вы ожидали — с помощью разноцветных обводок вы легко сможете их обнаружить.</p>
 
