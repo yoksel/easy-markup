@@ -3,6 +3,7 @@ import SiteFooter from '../siteFooter';
 import SiteHeader from '../siteHeader';
 import styles from './layout.module.scss';
 import { Post } from '../../types';
+import CustomHead from '../customHead';
 
 interface LayoutProps extends React.PropsWithChildren {
   slug: string;
@@ -13,6 +14,7 @@ interface LayoutProps extends React.PropsWithChildren {
 const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
   return (
     <div className={styles.wrapper}>
+      <CustomHead title={post?.title} />
       {allPosts && (
         <SiteHeader
           slug={slug}
