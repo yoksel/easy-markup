@@ -7,7 +7,7 @@ function addHighlighting(_: unknown, type: string, code: string) {
     Prism.languages[type],
     'type',
   );
-  return `<pre class="language-${type}"><code class="language-${type}">${highlightedCode}</code></pre>`;
+  return `<figure aria-label="Пример кода"><pre class="language-${type}"><code class="language-${type}">${highlightedCode}</code></pre></figure>`;
 }
 
 function addAnchors(_: unknown, level: string, id: string, text: string) {

@@ -30,7 +30,10 @@ const Aside = ({
   const { links, additional_links } = post;
 
   return (
-    <aside className={classnames(styles.aside, className)}>
+    <aside
+      className={classnames(styles.aside, className)}
+      aria-label='Дополнительные ссылки'
+    >
       <AsideNav
         title='На этой странице:'
         links={links}

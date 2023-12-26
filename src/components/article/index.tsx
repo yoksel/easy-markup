@@ -17,12 +17,16 @@ const Article = ({ title, content }: ArticleProps) => {
   }, []);
 
   return (
-    <article className={styles.article}>
+    <article
+      className={styles.article}
+      aria-labelledby='article-title'
+    >
       {title && (
         <h1
           ref={heading}
           className={styles.article__title}
           tabIndex={-1}
+          id='article-title'
         >
           {title}
         </h1>
