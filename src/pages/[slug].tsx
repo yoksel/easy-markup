@@ -23,7 +23,7 @@ export const getStaticProps = (async (context) => {
   const { slug } = context?.params || {};
 
   if (!slug || Array.isArray(slug)) {
-    throw new Error('No such page');
+    throw new Error('No page path');
   }
 
   const post = getPostBySlug({

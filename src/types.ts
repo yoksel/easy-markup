@@ -1,8 +1,8 @@
 // Not using global because issues with types in node script
 
 export interface Post {
-  slug?: string;
-  title?: string;
+  slug?: string | null;
+  title?: string | null;
   content?: string;
   order?: number;
   links?: PageUrl[];

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import styles from './article.module.scss';
 
 interface ArticleProps {
-  title?: string;
+  title?: string | null;
   content: string;
 }
 

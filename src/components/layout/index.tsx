@@ -6,17 +6,19 @@ import { Post } from '../../types';
 
 interface LayoutProps extends React.PropsWithChildren {
   slug: string;
-  post: Post;
-  allPosts: Post[];
+  post?: Post;
+  allPosts?: Post[];
 }
 
 const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
   return (
     <div className={styles.wrapper}>
-      <SiteHeader
-        slug={slug}
-        allPosts={allPosts}
-      />
+      {allPosts && (
+        <SiteHeader
+          slug={slug}
+          allPosts={allPosts}
+        />
+      )}
       <div className={styles.siteContent}>
         <main
           id='main'
@@ -24,16 +26,20 @@ const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
         >
           {children}
         </main>
-        <Aside
-          slug={slug}
-          className={styles.aside}
-          post={post}
-        />
+        {post && (
+          <Aside
+            slug={slug}
+            className={styles.aside}
+            post={post}
+          />
+        )}
       </div>
-      <SiteFooter
-        slug={slug}
-        allPosts={allPosts}
-      />
+      {allPosts && (
+        <SiteFooter
+          slug={slug}
+          allPosts={allPosts}
+        />
+      )}
     </div>
   );
 };
