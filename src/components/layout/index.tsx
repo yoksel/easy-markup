@@ -11,10 +11,21 @@ interface LayoutProps extends React.PropsWithChildren {
   allPosts?: Post[];
 }
 
+interface GetPageTitleArgs {
+  title?: string | null;
+  slug: string;
+}
+
+const getPageTitle = ({ title, slug }: GetPageTitleArgs) => {
+  if (title) return title;
+
+  return slug === '404' ? 'Страница не найдена' : undefined;
+};
+
 const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
   return (
     <div className={styles.wrapper}>
-      <CustomHead title={post?.title} />
+      <CustomHead title={getPageTitle({ title: post?.title, slug })} />
       {allPosts && (
         <SiteHeader
           slug={slug}
