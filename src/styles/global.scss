@@ -13,6 +13,10 @@ BODY {
   color: var(--color-text);
 }
 
+BODY:not(.keyboard-navigation) * {
+  outline: none;
+}
+
 /* Links
 --------------------------------------------- */
 

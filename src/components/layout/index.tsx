@@ -4,6 +4,7 @@ import SiteHeader from '../siteHeader';
 import styles from './layout.module.scss';
 import { Post } from '../../types';
 import CustomHead from '../customHead';
+import { useEffect } from 'react';
 
 interface LayoutProps extends React.PropsWithChildren {
   slug: string;
@@ -23,6 +24,14 @@ const getPageTitle = ({ title, slug }: GetPageTitleArgs) => {
 };
 
 const Layout = ({ children, slug, post, allPosts }: LayoutProps) => {
+  useEffect(() => {
+    window.addEventListener('keydown', (event) => {
+      if (event.code !== 'Tab') return;
+
+      document.body.classList.add('keyboard-navigation');
+    });
+  });
+
   return (
     <div className={styles.wrapper}>
       <CustomHead title={getPageTitle({ title: post?.title, slug })} />

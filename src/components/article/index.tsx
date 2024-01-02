@@ -12,9 +12,9 @@ const Article = ({ title, content }: ArticleProps) => {
   const heading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    // won't work on static version
+    // won't work on static version on second visited page
     heading?.current?.focus();
-  }, []);
+  });
 
   return (
     <article
