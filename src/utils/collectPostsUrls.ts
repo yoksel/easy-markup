@@ -3,7 +3,7 @@ import { getPostSlugs } from './api';
 
 const collectPostsUrls = () => {
   const slugs = getPostSlugs().map((slug) => `'/${slug.replace(/\.md$/, '')}'`);
-  const content = `const postList = [${slugs.join(', ')}];
+  const content = `/* npm run getPosts */\n\nconst postList = [${slugs.join(', ')}];
 
 export default postList;`;
 

@@ -9,6 +9,13 @@
 
 https://prismjs.com/index.html
 
+## Collect posts data
+
+```
+npm run getPosts
+```
+
+List will be saved to `src/postsList.ts`
 
 ## Deploy
 
