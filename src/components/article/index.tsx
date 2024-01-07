@@ -12,8 +12,13 @@ const Article = ({ title, content }: ArticleProps) => {
   const heading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    // won't work on static version on second visited page
+    // Work on static version on second visited page but for all rerenders
     heading?.current?.focus();
+
+    if (typeof window !== 'undefined') {
+      // https://blog.codepen.io/documentation/embedded-pens/#delayed-embeds
+      (window as any).__CPEmbed?.();
+    }
   });
 
   return (
