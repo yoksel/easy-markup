@@ -4,3 +4,4 @@ npm-debug.log
 .next
 node_modules
 tsconfig.tsbuildinfo
+out

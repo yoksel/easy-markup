@@ -109,7 +109,7 @@ npm i pixel-glass --save-dev
 
         <p>После этого на странице появится вот такая панель:
         </p>
-        <img src="/img/pixel-glass.png" alt="Панель Pixel Glass">
+        <img src="./img/pixel-glass.png" alt="Панель Pixel Glass">
 
         <p>Она позволит управлять прозрачностью <code>&lt;body></code> или выключить её совсем, если она не нужна.</p>
 
@@ -133,7 +133,7 @@ git clone git@github.com:yoksel/pixel-glass-js.git pixel-glass
 
         <p>При использовании этого способа в какой-то момент текст страницы наложится на текст макета, и получится нечитаемая каша. Чтобы отличить их друг от друга, можно CSS-ом раскрасить текст в яркие цвета (например, <code>color: crimson</code>). Получится примерно вот такое:</p>
 
-        <img src="/img/colored-text.png" alt="Цветной текст">
+        <img src="./img/colored-text.png" alt="Цветной текст">
 
         <p>Сразу видно где страница не совпадает с макетом и что нужно подправить.</p>
     </li>
@@ -168,8 +168,11 @@ BODY > * > * > * {
 
         <p>В действии это выглядит примерно так:</p>
 
-        <p data-height="630" data-theme-id="4974" data-slug-hash="yaXGpa" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yaXGpa/">yaXGpa</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="630" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/yoksel/embed/yaXGpa?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/yoksel/pen/yaXGpa">
+  Untitled</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
         <p>Этот код тоже можно вставить в <code>head</code> или лучше положить его в файл с стилями, но можно сделать ещё удобнее: добавьте в браузер <b>Stylish</b> (плагин для кастомного CSS) и подключите этот код через него — тогда в любой момент вы сможете включить или выключить обводки не покидая страницу.</p>
 
