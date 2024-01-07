@@ -17,6 +17,10 @@ BODY:not(.keyboard-navigation) * {
   outline: none;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 /* Links
 --------------------------------------------- */
 
