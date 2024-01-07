@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier './app/**/*.ts*' --write"
+    "format": "prettier './app/**/*.ts*' --write",
+    "getPosts": "ts-node src/utils/collectPostsUrls.ts"
   },
   "author": "",
   "license": "ISC",
