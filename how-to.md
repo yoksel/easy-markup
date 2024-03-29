@@ -15,7 +15,7 @@ https://prismjs.com/index.html
 npm run getPosts
 ```
 
-List will be saved to `src/postsList.ts`
+List will be saved to `src/postsList.ts`. In case of adding/removing files command should be runned by hands.
 
 ## Deploy
 
