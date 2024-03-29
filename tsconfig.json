@@ -30,7 +30,6 @@
     "src/**/*.tsx",
     "src/**/*.ts",
     "src/global.ts",
-    "src/utils/collectPostsUrls.mts",
   ],
   "exclude": [
     "node_modules",
